@@ -1,6 +1,6 @@
 25th February 2019:
 -created the changelog.txt
--started work on projects.html (the css doesnt work for some reason, I'll go back to try to fix it tomorrow)
+-started work on projects.html
 -updated css
 
 24th February 2019:
