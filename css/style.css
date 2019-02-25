@@ -53,7 +53,7 @@ a.nav{
 	color: #ffffff;
 }
 
-div.intro{
+.textcontent{
 	font-size: 20px;
 	width: 60%;
 }
@@ -65,4 +65,26 @@ a.hehe{
 	display: table;
 	padding: 5px;
 	float: right;
+}
+
+#projectcards{
+	display: flex;
+}
+
+.card{
+	display: flex;
+	align-items: flex-start;
+	background: #af4e1b;
+	padding: 5px;
+	margin: 5px;
+	max-width: 350px;
+}
+
+.cardimg{
+	max-height: 150px;
+}
+
+.cardtext{
+	margin-top: 5px;
+	margin-left: 20px;
 }
