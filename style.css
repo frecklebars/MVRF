@@ -1,0 +1,106 @@
+@font-face{
+	font-family: "Arimo";
+	src: url(fonts/Arimo-Regular.ttf);
+}
+
+html{
+	cursor: crosshair;
+}
+
+body{
+	background: #2b2f3a;
+	color: white;
+	font-family: 'Arimo', sans-serif;
+
+}
+
+hr{
+	width: 30%;
+	margin-left: 0;
+	color: #ffffff;
+}
+
+.topbar{
+	background: #af4e1b;
+}
+
+nav{
+	position: static;
+	width: 100%;
+	overflow: auto;
+}
+
+ul.nav{
+	display: table;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li.nav{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: inline-block;
+}
+
+li.nav:hover{
+	background:#57270d;
+}
+
+li.nav.active{
+	background: #ffffff;
+	color: #000000;
+}
+
+a.nav{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a{
+	color: #af4e1b;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #ffffff;
+	background: #af4e1b;
+}
+
+.textcontent{
+	font-size: 20px;
+	width: 60%;
+}
+
+a.hehe{
+	text-decoration: none;
+	color: #ffffff;
+	background: #af4e1b;
+	display: table;
+	padding: 5px;
+	float: right;
+}
+
+#projectcards{
+	display: flex;
+}
+
+.card{
+	display: flex;
+	align-items: flex-start;
+	background: #af4e1b;
+	padding: 5px;
+	margin: 5px;
+	max-width: 350px;
+}
+
+.cardimg{
+	max-height: 150px;
+}
+
+.cardtext{
+	margin-top: 5px;
+	margin-left: 20px;
+}
