@@ -1,3 +1,9 @@
+28th February 2019:
+-certain other misc changes
+-linked a template project
+-made the flex boxes on the projects page work
+-updated CSS and the index file a bit
+
 25th February 2019:
 -created the changelog.txt
 -started work on projects.html
