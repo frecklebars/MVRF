@@ -14,6 +14,12 @@ body{
 
 }
 
+hr{
+	width: 30%;
+	margin-left: 0;
+	color: #ffffff;
+}
+
 .topbar{
 	background: #af4e1b;
 }
@@ -51,6 +57,16 @@ li.nav.active{
 a.nav{
 	text-decoration: none;
 	color: #ffffff;
+}
+
+a{
+	color: #af4e1b;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #ffffff;
+	background: #af4e1b;
 }
 
 .textcontent{
