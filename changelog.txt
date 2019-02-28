@@ -1,5 +1,6 @@
 28th February 2019:
--certain other misc changes
+-added to do list page
+-created a second nav bar for the projects tab
 -linked a template project
 -made the flex boxes on the projects page work
 -updated CSS and the index file a bit
