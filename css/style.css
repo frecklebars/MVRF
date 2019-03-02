@@ -104,3 +104,15 @@ a.hehe{
 	margin-top: 5px;
 	margin-left: 20px;
 }
+
+.tier{
+	background: #af4e1b;
+	display: block;
+	width: 45%;
+}
+
+dl.todo>dt{
+	font-size: 20px;
+	font-style: italic;
+	width: 45%
+}
