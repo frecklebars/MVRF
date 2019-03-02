@@ -1,7 +1,9 @@
 2nd March 2019:
+-update: on some browsers it loads well, on some doesn't, idk what's the problem
+-note to self: resize /all/ text (check it on phone)
 -worked on the To Do list
 -updated css
->the to do list doesn't load as it should but I'm gonna try to fix another time
+-the to do list doesn't load as it should but I'm gonna try to fix another time
 
 28th February 2019:
 -added to do list page
