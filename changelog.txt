@@ -1,3 +1,8 @@
+2nd March 2019:
+-worked on the To Do list
+-updated css
+>the to do list doesn't load as it should but I'm gonna try to fix another time
+
 28th February 2019:
 -added to do list page
 -created a second nav bar for the projects tab
