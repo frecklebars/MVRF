@@ -20,7 +20,7 @@ body{
 }
 
 .secret{
-	color: 	#2b2f3a;
+	color: #2b2f3a;
 }
 
 .secret::selection{
@@ -97,30 +97,6 @@ a.hehe{
 	float: right;
 }
 
-#projectcards{
-	display: flex;
-}
-
-.card{
-	display: flex;
-	align-items: flex-start;
-	background: #af4e1b;
-	padding: 5px;
-	margin: 5px;
-	max-width: 400px;
-	min-width: 400px;
-	max-height: 300px;
-}
-
-.cardimg{
-	max-height: 150px;
-}
-
-.cardtext{
-	margin-top: 5px;
-	margin-left: 20px;
-}
-
 .tier{
 	background: #af4e1b;
 	display: block;
@@ -154,8 +130,13 @@ div.deadend>h1{
 	max-width: 70%;
 }
 
+.articleimg{
+	float: right;
+	max-width: 250px;
+}
+
 .articleend{
-	position: bottom;
+	width: 100%;
 }
 
 .highlight{
@@ -170,4 +151,9 @@ div.deadend>h1{
 	background-image: url('../images/thecheesybites.jpg');
 	padding: 10px 100px;
 	color: #ffffff;
+}
+
+.gifbg{
+	background: rgba(43, 47, 58, 0.7);
+	padding: 10px;
 }
