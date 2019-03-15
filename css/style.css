@@ -84,6 +84,7 @@ a:hover{
 }
 
 .textcontent{
+	margin-left: 5px;
 	font-size: 20px;
 	width: 60%;
 }
