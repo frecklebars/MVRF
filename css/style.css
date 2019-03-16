@@ -11,7 +11,6 @@ body{
 	background: #2b2f3a;
 	color: white;
 	font-family: 'Arimo', sans-serif;
-
 }
 
 ::selection{
@@ -86,7 +85,20 @@ a:hover{
 .textcontent{
 	margin-left: 5px;
 	font-size: 20px;
-	width: 60%;
+	max-width: 60%;
+}
+
+.borderbox{
+	float: right;
+	max-width: 30%;
+	border: 4px;
+	border-style: solid;
+	border-color: #af4e1b;
+}
+
+div.borderbox > h2{
+	color: #af4e1b;
+	padding-left: 7%;
 }
 
 a.hehe{
@@ -104,7 +116,7 @@ a.hehe{
 	width: 45%;
 }
 
-dl.todo>dt{
+dl.todo > dt{
 	font-size: 20px;
 	font-style: italic;
 	width: 45%
@@ -116,7 +128,7 @@ div.deadend{
     left: 43%;
 }
 
-div.deadend>h1{
+div.deadend > h1{
 	text-align: center; 
 }
 
@@ -157,4 +169,10 @@ div.deadend>h1{
 .gifbg{
 	background: rgba(43, 47, 58, 0.7);
 	padding: 10px;
+}
+
+a > li > span{
+	color: #ffffff;
+	text-decoration: underline;
+	text-decoration-color: #af4e1b;
 }
