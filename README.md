@@ -1,4 +1,4 @@
-## homepage
-A website I wrote that serves as a tracker for all my projects, or simply other stuff I'm interested in.
+one day maybe ill reorganise all the files so that i can make the posts standalone, and not have to update so many things for one page
 
-A passion project, if you will.
+
+a man can dream
