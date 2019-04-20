@@ -161,7 +161,7 @@ div.deadend > h1{
 
 #cheesy{
 	display: table;
-	background-image: url('../images/thecheesybites.jpg');
+	background-image: url('../_cheese/thecheesybites.jpg');
 	padding: 10px 100px;
 	color: #ffffff;
 }
