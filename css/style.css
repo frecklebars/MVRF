@@ -183,4 +183,5 @@ a > li > span{
 
 .webgl-content{
 	display: inline-block;
+	outline: #af4e1b 15px solid;
 }
