@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<head>
+	<title>Waiting Room</title>
+	<script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/0.3.1.json", {onProgress: UnityProgress});
+    </script>
+</head>
+<body>
+	<nav>
+		<div class="topbar">
+			<ul class='nav'>
+				<a href="../../index.html" class='nav'><li class='nav'>Home</li></a>
+				<a href="../../_projects/projects.html" class='nav'><li class='nav'>Projects</li></a>
+				<a href="../../_collection/collection.html" class='nav'><li class='nav'>Collection</li></a>
+				<a href="../../_stuff/stuff.html" class='nav'><li class='nav'>Stuff I Enjoy</li></a>
+				<a href="../../_cheese/cheese.html" class='nav'><li class='nav'>Cheesy Bites</li></a>
+				<a href="../../_diary/diary.html" class='nav'><li class='nav'>Diary</li></a>
+			</ul>
+		</div>
+	</nav>
+	<nav>
+		<div class="topbar">
+			<ul class='nav'>
+				<a href="../projects.html" class='nav'><li class='nav'><< Go back</li></a>
+			</ul>
+		</div>
+	</nav>
+	<h1>now how do I make this</h1>
+	wait <br>
+	<div class="textcontent">
+		hope this works
+	</div><br>
+	<div class="webgl-content">
+      <div id="gameContainer" style="width: 1280px; height: 720px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">GONP</div>
+      </div>
+    </div>
+    <div class="textcontent">
+    	does it :?
+    </div>
+</body>
+</html>
