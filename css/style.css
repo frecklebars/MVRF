@@ -182,8 +182,6 @@ a > li > span{
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	border: solid;
-	border-width: 10px;
-	border-color: #af4e1b;
+	outline: #af4e1b 10px solid;
 
 }
