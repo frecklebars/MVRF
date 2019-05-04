@@ -178,10 +178,6 @@ a > li > span{
 }
 
 .webgl-content{
-	position: absolute;
 	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
 	outline: #af4e1b 10px solid;
-
 }
