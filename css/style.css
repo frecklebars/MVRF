@@ -185,3 +185,13 @@ a > li > span{
 	display: inline-block;
 	outline: #af4e1b 15px solid;
 }
+
+.mid{
+	text-align: center;
+    font-size: 20px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+	top: 50%;
+   	width: 100%;
+}
