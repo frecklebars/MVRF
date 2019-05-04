@@ -177,7 +177,10 @@ a > li > span{
 	text-decoration-color: #af4e1b;
 }
 
+.webglcover{
+	text-align: center;
+}
+
 .webgl-content{
-	left: 50%;
-	outline: #af4e1b 10px solid;
+	display: inline-block;
 }
