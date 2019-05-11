@@ -1,0 +1,42 @@
+body{
+	background: #132020;
+	background: url(rainier.gif);
+	background-size: 100%
+}
+
+.topbar{
+	background: #396060;
+}
+
+li.nav:hover{
+	background:#132020;
+}
+
+::selection{
+	background: #ffffff;
+	color: #396060;
+}
+
+a{
+	color: #396060;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #ffffff;
+	background: #396060;
+}
+
+.highlight{
+	display: table;
+	background: #396060;
+	color: #ffffff;
+	padding: 3px;
+}
+
+.head{
+	display: grid;
+	font-size: 25px;
+	background: #396060;
+	color: #ffffff;
+}

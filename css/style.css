@@ -195,3 +195,12 @@ a > li > span{
 	top: 50%;
    	width: 100%;
 }
+
+.no{
+	color: #ffffff;
+}
+
+.no:hover{
+	background: #2b2f3a;
+	cursor: crosshair;
+}
