@@ -204,6 +204,6 @@ a > li > span{
 }
 
 .no:hover{
-	background: #2b2f3a;
+	background: none;
 	cursor: crosshair;
 }
