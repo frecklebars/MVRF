@@ -1,0 +1,209 @@
+@font-face{
+	font-family: "Arimo";
+	src: url(fonts/Arimo-Regular.ttf);
+}
+
+html{
+	cursor: crosshair;
+}
+
+body{
+	background: #2b2f3a;
+	color: white;
+	font-family: 'Arimo', sans-serif;
+	background: url(backgrounds/maybe.gif);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+::selection{
+	background: #ffffff;
+	color: #af4e1b
+}
+
+.secret{
+	color: transparent;
+}
+
+.secret::hover{
+	background: none;
+	color: 	#ffffff;
+}
+
+hr{
+	width: 30%;
+	margin-left: 0;
+	color: #ffffff;
+}
+
+.topbar{
+	background: #af4e1b;
+}
+
+nav{
+	position: static;
+	width: 100%;
+	overflow: auto;
+}
+
+ul.nav{
+	display: table;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li.nav{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: inline-block;
+}
+
+li.nav:hover{
+	background:#57270d;
+}
+
+li.nav.active{
+	background: #ffffff;
+	color: #000000;
+}
+
+a.nav{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a{
+	color: #af4e1b;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #ffffff;
+	background: #af4e1b;
+}
+
+.textcontent{
+	margin-left: 5px;
+	font-size: 20px;
+	max-width: 60%;
+}
+
+.borderbox{
+	float: right;
+	max-width: 30%;
+	border: 4px;
+	border-style: solid;
+	border-color: #af4e1b;
+}
+
+div.borderbox > h2{
+	color: #af4e1b;
+	padding-left: 7%;
+}
+
+a.hehe{
+	text-decoration: none;
+	color: #ffffff;
+	background: #af4e1b;
+	display: table;
+	padding: 5px;
+	float: right;
+}
+
+.tier{
+	background: #af4e1b;
+	display: block;
+	width: 45%;
+}
+
+dl.todo > dt{
+	font-size: 20px;
+	font-style: italic;
+	width: 45%
+}
+
+div.deadend{
+	position: absolute;
+    top:40%;
+    left: 43%;
+}
+
+div.deadend > h1{
+	text-align: center; 
+}
+
+.head{
+	display: grid;
+	font-size: 25px;
+	background: #af4e1b;
+	color: #ffffff;
+}
+
+.articlestuff{
+	max-width: 70%;
+}
+
+.articleimg{
+	float: right;
+	max-width: 250px;
+}
+
+.articleend{
+	width: 100%;
+}
+
+.highlight{
+	display: table;
+	background: #af4e1b;
+	color: #ffffff;
+	padding: 3px;
+}
+
+#cheesy{
+	display: table;
+	background-image: url('../_cheese/thecheesybites.jpg');
+	padding: 10px 100px;
+	color: #ffffff;
+}
+
+.gifbg{
+	background: rgba(43, 47, 58, 0.7);
+	padding: 10px;
+}
+
+a > li > span{
+	color: #ffffff;
+	text-decoration: underline;
+	text-decoration-color: #af4e1b;
+}
+
+.webglcover{
+	text-align: center;
+}
+
+.webgl-content{
+	display: inline-block;
+	outline: #af4e1b 15px solid;
+}
+
+.mid{
+	text-align: center;
+    font-size: 20px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+	top: 50%;
+   	width: 100%;
+}
+
+.no{
+	color: #ffffff;
+}
+
+.no:hover{
+	background: none;
+	cursor: crosshair;
+}
