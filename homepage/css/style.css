@@ -125,6 +125,10 @@ dl.todo > dt{
 	width: 45%
 }
 
+dl.todo > dd{
+	font-size: 18px;
+}
+
 div.deadend{
 	position: absolute;
     top:40%;
