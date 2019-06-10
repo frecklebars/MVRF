@@ -25,11 +25,6 @@ body{
 	color: transparent;
 }
 
-.secret::hover{
-	background: none;
-	color: 	#ffffff;
-}
-
 hr{
 	width: 30%;
 	margin-left: 0;
@@ -221,4 +216,15 @@ ul.mix > a{
 
 ul.mix > span{
 	font-size: 18px;
+}
+
+a.icon > img{
+	height: 25px;
+	-webkit-filter: invert(1);
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+a.icon:hover{
+	background: none;
 }
