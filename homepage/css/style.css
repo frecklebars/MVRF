@@ -198,6 +198,12 @@ a > li > span{
    	width: 99%;
 }
 
+.center{
+	text-align: center;
+    margin: auto;
+   	width: 99%;
+}
+
 .no{
 	color: #ffffff;
 }
