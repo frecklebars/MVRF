@@ -4,6 +4,6 @@
 ~~a man can dream~~  
 nice  
   
-## ok but fr now
-it's like my own world isn't it?  
-i like writing stuff on my mind
+## what is this?
+it's like my own world, free to write about whatever i want, whenever i want  
+i like writing about stuff on my mind
