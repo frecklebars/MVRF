@@ -3,30 +3,29 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <head>
 	<title>perception of false reality</title>
-</head>
-<body>
 	<script type="text/javascript">
 		function passher(){
-			var form = getElementById("ghosttown");
-			if(form.password.value != "uh"){
-				alert(":(");
-				form.password.focus()
-				return false;
+			var pass = 'qwerty';
+			if(this.document.ghosttown.her.value == 'her'){
+				window.location.href = "2.html";
 			}
-			return false;
+			else{
+				return;
+			}
 		}
 	</script>
+</head>
+<body>
 	<div class="mid" style="padding-top: 100px">
 		a faint sound, in the distance <br>
 		you are reminded of something <br>
 		<br>
 		under construction <br>
 		<a href="../index.html">return</a><br><br><br>
-		<!--
-		<form action="../index.html" method="post" id="ghosttown">
+
+		<form action="javascript: passher(this.form)" method="post" name="ghosttown">
 			<input type="password" name="her">
 		</form>
-		-->
 	</div>
 </body>
 </html>

@@ -163,7 +163,7 @@ div.deadend > h1{
 
 #cheesy{
 	display: table;
-	background-image: url('../_cheese/thecheesybites.jpg');
+	background-image: url('../cheese/thecheesybites.jpg');
 	padding: 10px 100px;
 	color: #ffffff;
 }
