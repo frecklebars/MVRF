@@ -161,6 +161,12 @@ div.deadend > h1{
 	padding: 3px;
 }
 
+.highlightmid{
+	background: #af4e1b;
+	color: #ffffff;
+	padding: 3px;
+}
+
 #cheesy{
 	display: table;
 	background-image: url('../cheese/thecheesybites.jpg');
