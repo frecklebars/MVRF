@@ -1,0 +1,17 @@
+html{
+		cursor: crosshair;
+	}
+	body{
+		background-image: url("sky/hi.gif");
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	.menu{
+		text-align: center;
+	    margin: auto;
+	    margin-top: 150px;
+	   	width: 99%;
+	}
+	span.fill1{
+		padding: 0px 110px 0px 110px;
+	}
