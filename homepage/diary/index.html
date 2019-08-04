@@ -8,13 +8,13 @@
 	<nav>
 		<div class="topbar">
 			<ul class='nav'>
-				<a href="../index.html" class='nav'><li class='nav'>LEAVE?</li></a>
-				<a href="../projects/index.html" class='nav'><li class='nav'>LEAVE?</li></a>
-				<a href="../collection/index.html" class='nav'><li class='nav'>LEAVE?</li></a>
-				<a href="../stuff/index.html" class='nav'><li class='nav'>LEAVE?</li></a>
-				<a href="../cheese/index.html" class='nav'><li class='nav'>LEAVE?</li></a>
+				<a href="../index.html" class='nav' id="tst0"><li class='nav'>LEAVE?</li></a>
+				<a href="../projects/index.html" class='nav' id="tst1"><li class='nav'>LEAVE?</li></a>
+				<a href="../collection/index.html" class='nav' id="tst2"><li class='nav'>LEAVE?</li></a>
+				<a href="../stuff/index.html" class='nav' id="tst3"><li class='nav'>LEAVE?</li></a>
+				<a href="../cheese/index.html" class='nav' id="tst4"><li class='nav'>LEAVE?</li></a>
 				<li class='active nav'>WHAT?NOW</li>
-				<a href="aaa.html" class="nav" style="color: #af4e1b;margin-left: 400px"><li class="nav">what no</li></a>
+				<a class="nav" style="display: none" id="ph3" onclick="reset()"><li class="nav">:(</li></a>
 			</ul>
 		</div>
 	</nav>
@@ -74,8 +74,8 @@
 		}
 	</style>
 	<br><br>
-	<span style="font-size: 40px; padding-left: 40px"><span>WHERE TO</span><span class="secret"> NOWHERE TO GO</span></span><br>
-	<span style="font-size: 40px; padding-left: 65px"><span>WHERE TO</span><span class="secret"> NOWHERE TO GO</span></span>
+	<span style="font-size: 40px; padding-left: 40px"><span>WHERE TO</span><span class="secret" id="s1"> NOWHERE TO GO</span></span><br>
+	<span style="font-size: 40px; padding-left: 65px"><span>WHERE TO</span><span class="secret" id="s2"> NOWHERE TO GO</span><span id="ph2" style="display: none" onclick="phase2()">?</span></span>
 
 	<br>
 	<div class="help">
@@ -160,14 +160,15 @@
 			YOU CANT TOUCH ME NOW <br>
 		</div>
 		<div class="god">
-			<img src="aaa.jpg" style="width: 430px;">
+			<img src="aaa.jpg" id="ph13" style="width: 430px;">
 		</div>
 		<div class="god2">
-			<img src="why.jpg" style="width: 395px;">
+			<img src="why.jpg" id="ph12" style="width: 395px;">
 		</div>
 		<div class="god3">
-			<img src="oh.jpg" style="width: 300px">
+			<img src="oh.jpg" id="ph1" style="width: 300px;" onclick="phase1()">
 		</div>
 	</div>
+	<script type="text/javascript" src="entry.js"></script>
 </body>
 </html>

@@ -111,17 +111,18 @@ a.hehe{
 .tier{
 	background: #af4e1b;
 	display: block;
-	width: 45%;
+	width: 55%;
 }
 
 dl.todo > dt{
 	font-size: 20px;
 	font-style: italic;
-	width: 45%
+	width: 55%
 }
 
 dl.todo > dd{
 	font-size: 18px;
+	width: 55%;
 }
 
 div.deadend{
