@@ -12,3 +12,11 @@ body{
 a{
 	color: #ffff80;
 }
+
+button{
+	background-color: #ffff80;
+	color: #222222;
+	border: none;
+  	padding: 7px 15px;
+  	margin: 5px 3px;
+}
