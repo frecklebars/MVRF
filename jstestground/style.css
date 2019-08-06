@@ -20,3 +20,17 @@ button{
   	padding: 7px 15px;
   	margin: 5px 3px;
 }
+
+#container{
+	width: 200px;
+  	height: 200px;
+  	background: #ffff80;
+  	position: relative;
+}
+
+#box{
+	width: 50px;
+  	height: 50px;
+  	background: #ffb4d5;
+  	position: absolute;
+}

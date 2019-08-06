@@ -9,7 +9,6 @@
 	<h1>if you stumbled upon this by accident, you can return to the sky by clicking <a href="../index.html">here</a></h1>
 	<h2>this is used as a testing/learning ground for practicing my javascript</h2>
 	<hr>
-	<br>
 	<p id="demotext">some text</p>
 	<button onclick="changetxt()">press to change</button>
 	<button onclick="changeext()">change from outside</button>
@@ -18,10 +17,18 @@
 	<h3>object display:</h3>
 	<button onclick="displayO()">display</button>
 	<ul id="objd"></ul>
-
-	<button id="floatleftright" onclick="changefloat()">change float</button>
+	<button onclick="changefloat()" id="floatleftright">switch side</button>
+	<button onclick="getPrompt()">square a number via prompt</button>
+	<br><br>
+	<div id="container">
+		<div id="box">
+			
+		</div>
+	</div>
+	<button onclick="startBox()">Start Box</button>
 
 	<!-- placing text at the bottom of the body increases display speed -->
+	<script type="text/javascript" src="js/movebox.js"></script>
 	<script type="text/javascript">
 		function changetxt(){
 			document.getElementById("demotext").innerHTML = "new text";
@@ -35,7 +42,8 @@
 			}
 		}
 	</script>
-	<script type="text/javascript" src="extchange.js"></script>
-	<script type="text/javascript" src="obj.js"></script>
+	<script type="text/javascript" src="js/extchange.js"></script>
+	<script type="text/javascript" src="js/obj.js"></script>
+	<script type="text/javascript" src="js/prompt.js"></script>
 </body>
 </html>
