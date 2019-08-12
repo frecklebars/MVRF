@@ -26,8 +26,23 @@
 		</div>
 	</div>
 	<button onclick="startBox()">start box</button>
+	<br>to uppercase: 
+	<form style="display: inline-block;">
+		<input type="text" id="toupper" onchange="upper()">
+	</form>
+	changes on blur <br><br>
+	<button id="eventb">event listener</button> <span id="eventblrtest">blur:</span> <span id="eventtxt"></span>
+	<br><br>
+	<div>
+		<button onclick="prev()">prev</button>
+		<img width="250px" id="mon" src="testimg/1.png">
+		<button onclick="next()">next</button>
+	</div>
 
 	<!-- placing text at the bottom of the body increases display speed -->
+	<script type="text/javascript" src="js/imgswitch.js"></script>
+	<script type="text/javascript" src="js/events.js"></script>
+	<script type="text/javascript" src="js/toupper.js"></script>
 	<script type="text/javascript" src="js/movebox.js"></script>
 	<script type="text/javascript">
 		function changetxt(){
