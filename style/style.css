@@ -103,3 +103,19 @@ img.banner{
 	margin-top: 10px;
 	border-radius: 3px;
 }
+
+.switches{
+	display: inline-block;
+	font-size: 25px;
+	background-color: #234058;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 5px 0px 5px;
+	border-radius: 2px;
+}
+
+.switches::selection{
+	color: none;
+}
+.tab::selection{
+	color: none;
+}
