@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../../style/style.css">
+<html>
+<head>
+	<title>Solving XOR with Keras | eGrilledCheese</title>
+</head>
+<body>
+	<div class="content">
+		<p class="title">Solving the XOR problem with Keras</p><br>
+		<p>This is the first post in my blog series. To be honest it's mostly a placeholder until I start a Youtube channel where I'll be talking about this and other things I'm really into. But even then, I'll still keep writing here. Anyway, let's start!</p>
+		<hr>
+		<p class="subtitle">First of all, what is Keras, or a neural net even?</p>
+		<p>Good question. A neural network is basically a program that, instead directly doing what's it made to do, it <em>learns</em> how to do that. Smart stuff. It's supposed to simulate a brain, but overall it's trying to find and fit the perfect function to a given set of training data. Now how it does that is a little trickier. There's more ways of doing it, hell, there's more ways to even approach it. Some people work on trying to find better network architectures, while others may focus on finding more suitable math that's faster and more efficient. The topic is still up for debate a lot. Think of it like this, let's say we only started making bread and now we're debating and experimenting with different recipes. Will more water in the mix work better? What about spices? You get the point. <br><br>
+		<img src="https://s3.amazonaws.com/keras.io/img/keras-logo-2018-large-1200.png" width="600px" style="background-color: #eeeeee"><br><br>
+		<a href="keras.io">Keras</a> is a high lever API designed to make the process of making neural networks really easy and user friendly. It's written in python and it runs on top of TensorFlow, CNTK or Theano. We'll be using that because we want everything to be as simple as possible, avoiding the scary math stuff that pushes a lot of people away. You can install it easily, just type this in your environment of choice.</p>
+		<pre>pip install keras</pre>
+		<p>But you also need TensorFlow, so do the same but instead of typing "keras" just type "tensorflow"</p>
+		<p class="subtitle">Explaining the network</p>
+		<p>Well this is self explainatory. We'll clearly need numpy, Py's math baby. Keras expects numpy arrays. But we also want two more things out of Keras itself.</p>
+		<pre>import numpy as np
+
+from keras import models
+from keras import layers
+from keras import optimizers</pre>
+		<p>These will give you all the functions you need, I'll explain what each one is as we need to takle it. First of all, let's make the training and the target data sets. If your logic gate knowledge is iffy, XOR (exclusive or) means it returns 1 <em>only</em> if an imput is 1 and the other is 0. If both imputs are 0 it returns 0 but unlike normal OR, if both imputs are 1, it also returns 0. Say the imputs are called A and B, we could put XOR another way by saying this: "(A && !B) || (!A && B)". With that out of the way here's our data:</p>
+		<pre>X = np.array([[0, 0],
+              [0, 1],
+              [1, 0],
+              [1, 1]])
+
+y = np.array([0, 1, 1, 0])</pre>
+		<p>For each item in X, there is a corresponding item in y. That was pretty easy to understand. Let's move on to making the model!</p>
+		<pre>model = models.Sequential()</pre>
+		<p>Here we make a variable named "model" that will set up a sequential model. That essentially is a linear stack of layers made up of neurons. Now that we have this, we can move on to the funnest part, the architecture of the model, passing layers to it.</p>
+		<pre>model.add(layers.Dense(10, activation="tanh", input_dim=2))
+	model.add(layers.Dense(1, activation="sigmoid"))</pre>
+		<p>So what happens here? We essentially started building the little brain that will figure out XOR for us. In the first line we add a dense layer that consists of 10 neurons. A "dense" layer implements the following operation: "output = activation(dot(input, weights) + bias)". Activation is the activation function of our choice and dot is matrix multiplication. Simple enough. In our model we first passed one dense layer with 10 neurons in it, using the tanh activation function. Tanh squeezes your output between 1 and -1. The input_dim parameter specifies how many inputs we have. We need this because this is the first layer in the model, but for the next it is not required as it will look at its previous layer. We have two inputs because we're passing a list of two items, like [0, 1]. In the second layer we have only one neuron because we want that to be our output. Because we want our reply to be either 0 or 1, we'll want to use the sigmoid activation function, as that squashes the output between 0 and 1. If the output is under 0.5, it's 0, else it's 1.<br>Great! We have our model, now we only need to compile it. To do that we need two key elements, and optimiser and a loss function. We'll define our optimiser separately, and I'll explain why. We're using Stochastic Gradient Descent here. Let's call it in a variable.</p>
+		<pre>sgd = optimizers.SGD(lr=0.5)</pre>
+		<p>We're only doing this so we can change the learn rate. By doing this we can actively control how fast the model learns. Let's compile the thing now.</p>
+		<pre>model.compile(loss="mean_squared_error",
+              optimizer=sgd,
+              metrics=["accuracy"])</pre>
+        <p>Looks mean, but let's take it line by line here. I said before we need two major elements, the first one is the loss function. This will determine how far off the model's prediction is from the actual targer. We're using mean squared error here, which is honestly pretty self explainatory about what it does. Next, we need to pass on the optimizer we just initialised. The metricts parameter is optional, but it's a fun one. You're basically telling the netword what data to collect during training, to check during the process. <br>Finally, let's train!</p>
+        <pre>model.fit(X, y, epochs=500, verbose=2)</pre>
+        <p>As I stated before, a neural net at its core tried to fit a function to a given set of data. This <em>fits</em> that function. X and y are the given training and target datasets. Epochs are how many training loops we want done on the network. Verbose is how detailed do you want the report to be. It takes an integer that is either 0, 1 or 2. 0 means the net is silent, 1 means that it'll show a progress bar and 2 gives one line of information per epoch. <br> Now let's predict the values with one final line.</p>
+        <pre>print(model.predict(X))</pre>
+        <p>And we're done. You solved the XOR problem using Keras!</p>
+        <p class="subtitle">What now?</p>
+       	<p>Now there's a lot more you can experiment on! Try maybe changing the number of neurons, or add more layers. Try to change the activation functions or the loss and optimiser. Of course, XOR is a <strong>very</strong> simple problem, so you could try to find harder problems online. Or maybe make a model about something you need. If you're left wanting even more, try to ditch Keras and learn how to write your own network from scratch! Check out how each neuron actually works, or different training methods and never limit yourself! <br><br>If you want my advice, a good starting point is to make a color predictor, feeding it the 3 RGB values of a color, it should spit out whether the text on it will be visible better in black or white. I started with that, and it was fun to learn the ins and outs of how a network actually functions. If you want a guideline, I have one written already! It's open source, you can check it out <a href="https://github.com/frecklebars/text-color-predictor">here</a> or play with the net <a href="../../projects/colorneuralnet/index.html">here</a>.</p>
+       	<p class="subtitle">Download the code</p>
+       	<p>Here is the code from when I first solved it, there's a few comments in it that may or may not be a lil useful. They are mostly about what everything really was. <br><br><a href="keras_xor.py">Download here</a></p>
+	</div>
+</body>
+</html>
