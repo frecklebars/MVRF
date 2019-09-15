@@ -1,0 +1,141 @@
+@font-face{
+	font-family: "font";
+	src: url(fonts/Bitter-Regular.otf);
+}
+
+html{
+	cursor: crosshair;
+}
+
+body{
+	font-family: "font";
+	font-size: 20px;
+
+	background-color: #234058;
+	color: #eeeeee;
+
+	background: url(kitchen.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+div.content{
+	background-color: rgba(14, 13, 18, 0.85);
+	margin-top: 40px;
+	margin-bottom: 40px;
+  	margin-right: 9%;
+  	margin-left: 9%;
+	width: 82%;
+	text-align: center;
+	border: solid;
+	border-radius: 2px;
+	border-color: #444444;
+	border-width: 3px;
+}
+
+p.title{
+	text-align: center;
+	font-size: 30px;
+}
+
+p.subtitle{
+	text-align: left;
+	font-size: 25px;
+}
+
+p{
+	width: 90%;
+	padding-left: 5%;
+}
+
+div.door{
+	display: inline-block;
+}
+
+.doorway{
+	max-width: 250px;
+}
+.doorwayflip{
+	max-height: 250px;
+}
+
+span.fill{
+	padding: 0px 7.5%;
+}
+
+button{
+	border: none;
+	padding: 10px 30px;
+}
+
+a:link, a:visited{
+	color: #eeeeee;
+}
+
+a:hover{
+	color: #eeeeee;
+	background-color: #234058;
+	text-decoration: none;
+}
+
+a.icon > img{
+	-webkit-filter: invert(1);
+	max-width: 50px;
+}
+
+a.icon:hover{
+	background: none;
+}
+
+hr{
+	width: 75%;
+}
+
+img.banner{
+	width: 90%;
+	border: solid;
+	border-radius: 5px;
+	border-color: #444444;
+	border-width: 5px;
+}
+
+.introp{
+	display: none;
+}
+
+.tab{
+	display: block;
+	background-color: #234058;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+
+.switches{
+	display: inline-block;
+	font-size: 25px;
+	background-color: #234058;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 5px 0px 5px;
+	border-radius: 2px;
+}
+
+.switches::selection{
+	color: none;
+}
+.tab::selection{
+	color: none;
+}
+
+pre{
+	margin: 0 auto; 
+	text-align: left;
+	display: block;
+	background-color: #111111;
+	padding: 20px;
+	max-width: 75%;
+	border: solid;
+	border-color: #dddddd;
+	border-radius: 2px; 
+}

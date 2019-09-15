@@ -1,6 +1,6 @@
 
 section:nth-child(1){
-	background-image: url("kitchen.png");
+	background-image: url("bg/kitchen.png");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -12,26 +12,30 @@ section:nth-child(2){
 	min-height: 50vmin;
 }
 
-section:nth-child(2)>div{
-	width: 90%;
-	position: absolute;
-	left: 7%;
-	margin-top: 5%; 
-}
-
 section:nth-child(3){
 	background-color: #111111;
 	min-height: 10vmin;
 }
 
 section:nth-child(4){
-	background-image: url("kitchen.png");
+	background-image: url("bg/purplesky.png");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	min-height: 75vmin;
+	min-height: 600px;
+	position: relative;
+}
+
+section:nth-child(5){
+	background-color: #111111;
+	min-height: 10vmin;
+}
+
+section:nth-child(6){
+	background-color: #4A306D;
+	min-height: 45vmin;
 }
 
 section:last-child{
-	min-height: 40vmin;
+	min-height: 30vmin;
 }
