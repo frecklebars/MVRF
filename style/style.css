@@ -4,6 +4,7 @@
 	purple - #4A306D
 	lighter purple - #865289
 	some other purple - #644E84
+	orange - #D3931B
 */
 @font-face{
 	font-family: "font";
@@ -25,6 +26,11 @@
 	cursor: crosshair;
 }
 
+*::selection{
+	color: #111111;
+	background-color: #D3931B;
+}
+
 body{
 	font-family: "font";
 	font-size: 24px;
@@ -34,10 +40,12 @@ body{
 }
 
 a{
-	color: #865289;
+	color: #D3931B;
 }
 
 a:hover{
+	color: #111111;
+	background-color: #D3931B;
 	text-decoration: none;
 }
 
@@ -95,7 +103,7 @@ section{
 
 .icon{
 	position: relative;
-	background-color: #865289;
+	background-color: #D3931B;
 	padding: 5px 0px 2.5px 10px;
 	border-radius: 3px;
 }
@@ -115,5 +123,6 @@ a>div.icon{
 	right: 10px;
 	top: 50%;
 }
+
 /*/////////////////////*/
 
