@@ -1,0 +1,11 @@
+
+section:nth-child(1){
+	background-image: url("bg/library.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+section:last-child{
+	min-height: 30vmin;
+}
