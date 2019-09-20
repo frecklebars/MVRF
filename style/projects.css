@@ -6,6 +6,17 @@ section:nth-child(1){
 	background-position: center;
 }
 
+section:nth-child(2){
+	min-height: 50vmin;
+}
+
+section:nth-child(3){
+	background-color: #EAE7DE;
+	color: #111111;
+	min-height: 60vmin;
+}
+
 section:last-child{
+	border-top: solid 1px red;
 	min-height: 30vmin;
 }
