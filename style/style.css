@@ -75,7 +75,7 @@ section{
 }
 
 .text-section{
-	width: 50%;
+	width: 48%;
 	position: absolute;
 	left: 7%;
 	margin-top: 35px; 
@@ -101,12 +101,15 @@ section{
 }
 
 .prj-img{
+	display: block;
 	position: absolute;
 	width: 35%;
+	height: auto;
+	max-width: 400px;
 	right: 50px;
-	top: 25px;
+	top: 50px;
 	border: solid 5px #111111;
-	border-radius: 5px
+	border-radius: 5px;
 }
 
 .sec-img{
