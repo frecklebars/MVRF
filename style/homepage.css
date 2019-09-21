@@ -37,5 +37,5 @@ section:nth-child(6){
 }
 
 section:last-child{
-	min-height: 30vmin;
+	min-height: 40vmin;
 }
