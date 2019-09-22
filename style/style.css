@@ -6,6 +6,11 @@
 	some other purple - #644E84
 	orange - #D3931B
 */
+
+.debug{
+	border: solid 1px red;
+}
+
 @font-face{
 	font-family: "font";
 	src: url(fonts/Bitter-Regular.otf);
