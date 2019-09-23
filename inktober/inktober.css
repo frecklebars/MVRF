@@ -42,12 +42,22 @@
 }
 
 .button1{
+	border: solid 5px #EAE7DE;
+	border-radius: 5px;
+	padding: 14px;
+	font-size: 32px;
+	color: #EAE7DE;
 	position: absolute;
 	left: 5%;
 	top: 50%;
 	transform: translateY(-50%);
 }
 .button2{
+	border: solid 5px #EAE7DE;
+	border-radius: 5px;
+	padding: 14px;
+	font-size: 32px;
+	color: #EAE7DE;
 	position: absolute;
 	right: 5%;
 	top: 50%;
