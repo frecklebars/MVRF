@@ -13,7 +13,7 @@
 
 @font-face{
 	font-family: "font";
-	src: url(fonts/Bitter-Regular.otf);
+	src: url(fonts/Arvo-Regular.ttf);
 }
 @font-face{
 	font-family: "monkey";
@@ -133,18 +133,20 @@ section{
 	text-align: right;
 }
 
-.card1>a>img, .card2>a>img{
-	display: inline-block;
-	position: absolute;
-	max-height: 75%;
-	top: calc(25%/2);
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.door{
+	width: 350px;
 	border: solid #EAE7DE 7px;
+	border-radius: 7px;
 }
-.card1>a>img{
-	left: 17%;
-}
-.card2>a>img{
-	right: 17%;
+.flex>a:hover{
+	background-color: transparent;
 }
 
 .contact{
