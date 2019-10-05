@@ -10,7 +10,7 @@ var prompt2018 = [
 					"Nosebleed", "Hanahaki Disease", ""
 				];
 var prompt2019 = [
-					"", "Fire", "Calm", "Tea", "Cookies", "Pimpkin",
+					"", "Fire", "Calm", "Tea", "Cookies", "Pumpkin",
 					"Powernap", "Cherry Pie", "Chicken", "Ghost", 
 					"Warm Socks", "Cozy", "Icecream", "Magical Bunny", 
 					"Blanket", "Potion", "Rain", "Cake", "Falling",
