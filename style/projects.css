@@ -11,22 +11,22 @@ section:nth-child(2){
 }
 
 section:nth-child(3){
-	background-color: #EAE7DE;
-	color: #111111;
-	min-height: 60vmin;
-}
-
-section:nth-child(4){
-	background-color: #2F3136;
-	min-height: 60vmin;
-}
-
-section:nth-child(5){
 	background-image: url("../inktober/bg.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	color: #222222;
+	min-height: 60vmin;
+}
+
+section:nth-child(4){
+	background-color: #EAE7DE;
+	color: #111111;
+	min-height: 60vmin;
+}
+
+section:nth-child(5){
+	background-color: #2F3136;
 	min-height: 60vmin;
 }
 
