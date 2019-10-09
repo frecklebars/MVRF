@@ -1,4 +1,6 @@
-
+*{
+	font-family: men;
+}
 .intrologo{
 	top: 25%;
 	margin-left: 60px;

@@ -19,6 +19,10 @@
 	font-family: "monkey";
 	src: url(fonts/MonkeyIsland-1990.ttf);
 }
+@font-face{
+	font-family: "men";
+	src: url(fonts/manlymenbb_bold.ttf);
+}
 
 
 *{
@@ -70,6 +74,9 @@ section{
 
 .monkey{
 	font-family: monkey;
+}
+.menfont{
+	font-family: men;
 }
 
 .goback{
