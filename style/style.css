@@ -64,6 +64,18 @@ section{
 	position: relative;
 }
 
+.nav{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	background: #111111;
+	padding: 15px;
+}
+
+.nav-about-dr:hover>.nav-about-dr{
+	display: inline-block;
+}
+
 .intro{
 	position: absolute;
 	text-align: center;
@@ -123,13 +135,17 @@ section{
 	border: solid 5px #111111;
 	border-radius: 5px;
 }
-
+/**IN THIS HOUSEHOLD WE DO NOT
+ ASK WHY THESE TWO ARE DIFFERENT 
+ AND NEED TWO SEPARATE CLASSES**/
 .sec-img{
 	position: absolute;
 	height: 75%;
 	top: 50%;
 	transform: translateY(-50%);
 	right: 5%;
+	border: solid 5px #111111;
+	border-radius: 5px;
 }
 .sec-img-flavor{
 	position: absolute;
