@@ -71,10 +71,7 @@ section{
 	background: #111111;
 	padding: 15px;
 }
-
-.nav-about-dr:hover>.nav-about-dr{
-	display: inline-block;
-}
+/*unfinished*/
 
 .intro{
 	position: absolute;
@@ -99,10 +96,11 @@ section{
 }
 
 .text-section{
-	width: 48%;
-	position: absolute;
-	left: 7%;
-	margin-top: 35px; 
+	padding-top: 45px;
+	padding-left: 45px;
+	width: 55%;
+	padding-bottom: 75px;
+
 }
 
 .link-section{
@@ -124,36 +122,14 @@ section{
 	background-color: #111111;
 }
 
-.prj-img{
-	display: block;
-	position: absolute;
-	width: 35%;
-	height: auto;
-	max-width: 400px;
-	right: 50px;
-	top: 50px;
-	border: solid 5px #111111;
-	border-radius: 5px;
-}
-/**IN THIS HOUSEHOLD WE DO NOT
- ASK WHY THESE TWO ARE DIFFERENT 
- AND NEED TWO SEPARATE CLASSES**/
 .sec-img{
 	position: absolute;
-	height: 75%;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 5%;
+	right: 40px;
+	top: 40px;
+	max-width: 30%;
+	max-height: 80%;
 	border: solid 5px #111111;
 	border-radius: 5px;
-}
-.sec-img-flavor{
-	position: absolute;
-	font-size: 16px;
-	bottom: 2.5%;
-	right: 5%;
-	max-width: 320px;
-	text-align: right;
 }
 
 .flex{

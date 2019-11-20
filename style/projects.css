@@ -8,14 +8,11 @@ section:nth-child(1){
 
 section:nth-child(2){
 	min-height: 50vmin;
-}
+}/*intro*/
 
 section:nth-child(3){
-	background-image: url("../inktober/bg.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	color: #222222;
+	background-color: #B5BB99; /*srs cover color*/
+	color: #111111;
 	min-height: 60vmin;
 }
 
@@ -23,12 +20,21 @@ section:nth-child(4){
 	background-color: #EAE7DE;
 	color: #111111;
 	min-height: 60vmin;
-}
+}/*text color predictor*/
 
 section:nth-child(5){
+	background-image: url("../inktober/bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	color: #222222;
+	min-height: 60vmin;
+}/*inktober*/
+
+section:nth-child(6){
 	background-color: #2F3136;
 	min-height: 60vmin;
-}
+}/*brobotto*/
 
 section:last-child{
 	min-height: 40vmin;
