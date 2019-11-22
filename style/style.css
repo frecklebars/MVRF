@@ -23,6 +23,10 @@
 	font-family: "men";
 	src: url(fonts/manlymenbb_bold.ttf);
 }
+@font-face{
+	font-family: "sweatshirtfont";
+	src: url(fonts/LucidaBlackletterRegular.ttf);
+}
 
 
 *{
@@ -87,6 +91,9 @@ section{
 .menfont{
 	font-family: men;
 }
+.earlfont{
+	font-family: sweatshirtfont;
+}
 
 .goback{
 	position: absolute;
@@ -100,7 +107,7 @@ section{
 	padding-left: 45px;
 	width: 55%;
 	padding-bottom: 75px;
-
+	position: relative;
 }
 
 .link-section{
@@ -108,6 +115,7 @@ section{
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	bottom: 10px;
+	max-width: 100%;
 }
 .link-section>a{
 	margin: 0px 20px 0px 20px;

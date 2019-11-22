@@ -6,18 +6,18 @@ section:nth-child(1){
 	background-position: center;
 }
 
-section:nth-child(2){
+section#intro{
 	background-color: #EAE7DE;
 	color: #111111;
 	min-height: 50vmin;
 }
 
-section:nth-child(3){
+section#padding{
 	background-color: #111111;
 	min-height: 10vmin;
 }
 
-section:nth-child(4){
+section#doors{
 	background-image: url("bg/purplesky.png");
 	background-size: cover;
 	background-attachment: fixed;
@@ -26,16 +26,11 @@ section:nth-child(4){
 	position: relative;
 }
 
-section:nth-child(5){
-	background-color: #111111;
-	min-height: 10vmin;
-}
-
-section:nth-child(6){
+section#updates{
 	background-color: #4A306D;
 	min-height: 45vmin;
 }
 
-section:nth-child(7){
+section:last-child{
 	min-height: 40vmin;
 }

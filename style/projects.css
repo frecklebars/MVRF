@@ -4,25 +4,26 @@ section:nth-child(1){
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+	min-height: 80vmin;
 }
 
-section:nth-child(2){
-	min-height: 50vmin;
+section#intro_projects{
+	min-height: 5vmin;
 }/*intro*/
 
-section:nth-child(3){
+section#sweatshirt{
 	background-color: #B5BB99; /*srs cover color*/
 	color: #111111;
 	min-height: 60vmin;
 }
 
-section:nth-child(4){
+section#colornet{
 	background-color: #EAE7DE;
 	color: #111111;
 	min-height: 60vmin;
 }/*text color predictor*/
 
-section:nth-child(5){
+section#inktober{
 	background-image: url("../inktober/bg.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -31,7 +32,7 @@ section:nth-child(5){
 	min-height: 60vmin;
 }/*inktober*/
 
-section:nth-child(6){
+section#brobotto{
 	background-color: #2F3136;
 	min-height: 60vmin;
 }/*brobotto*/
