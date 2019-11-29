@@ -4,7 +4,7 @@ section:nth-child(1){
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	min-height: 80vmin;
+	min-height: 40vmin;
 }
 
 section#intro_projects{

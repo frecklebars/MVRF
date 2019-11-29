@@ -80,7 +80,7 @@ section{
 .intro{
 	position: absolute;
 	text-align: center;
-	top: 45%;
+	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }
@@ -97,7 +97,7 @@ section{
 
 .goback{
 	position: absolute;
-	bottom: 7%;
+	bottom: 10%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }
