@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../style/style.css">
+<html>
+<head>
+	<title>katrand</title>
+</head>
+<style type="text/css">
+	.randbutton{
+		width: 150px;
+		position: absolute;
+		padding: 10px 0px 10px 0px;
+		background-color: #D3931B;
+		border-radius: 5px;
+		color: #111111;
+		border-color: #EAE7DE;
+		border-width: 5px;
+		left: 50%;
+		margin-left: -75px;
+	}
+</style>
+<script type="text/javascript">
+	function katrand(){
+		var a = 0, b = 0, c = 0, d = 0, rand = 0;
+		for(var i = 0; i < 10000; i++){
+			rand = Math.floor(Math.random()*4);
+			if(rand == 0){
+				a++;
+			}
+			else if(rand == 1){
+				b++;
+			}
+			else if(rand == 2){
+				c++;
+			}
+			else{
+				d++;
+			}
+		}
+		var katstr = "a = " + a/100 + "%\n";
+		katstr += "b = " + b/100 + "%\n";
+		katstr += "c = " + c/100 + "%\n";
+		katstr += "d = " + d/100 + "%\n";
+		document.getElementById("results").innerHTML = katstr;
+	}
+</script>
+<body>
+	<br><br><br><br>
+	<center>
+		<p>press the button</p>
+		<br>
+		<p class="randbutton" onclick="katrand()">rand</p>
+		<br><br><br>
+		<p id="results">results appear here</p>
+	</center>
+</body>
+</html>
