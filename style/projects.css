@@ -21,7 +21,7 @@ section#colornet{
 	background-color: #EAE7DE;
 	color: #111111;
 	min-height: 60vmin;
-}/*text color predictor*/
+}
 
 section#inktober{
 	background-image: url("../inktober/bg.jpg");
@@ -30,12 +30,12 @@ section#inktober{
 	background-position: center;
 	color: #222222;
 	min-height: 60vmin;
-}/*inktober*/
+}
 
 section#brobotto{
 	background-color: #2F3136;
 	min-height: 60vmin;
-}/*brobotto*/
+}
 
 section:last-child{
 	min-height: 40vmin;
