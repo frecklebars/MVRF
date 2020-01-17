@@ -37,11 +37,15 @@
     vertical-align: baseline;
     background: transparent;
 	cursor: crosshair;
+	overflow-x: hidden;
 }
 
 *::selection{
 	color: #111111;
 	background-color: #D3931B;
+}
+
+html{
 }
 
 body{
@@ -75,7 +79,6 @@ section{
 }
 
 .nav{
-	position: fixed;
 	top: 0;
 	width: 100vw;
 	background: #111111;

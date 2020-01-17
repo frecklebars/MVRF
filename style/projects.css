@@ -11,32 +11,40 @@ section#intro_projects{
 	min-height: 5vmin;
 }/*intro*/
 
-section#sweatshirt{
-	background-color: #B5BB99; /*srs cover color*/
-	color: #111111;
-	min-height: 60vmin;
-}
-
-section#colornet{
+section#software{
 	background-color: #EAE7DE;
 	color: #111111;
 	min-height: 60vmin;
 }
 
-section#inktober{
-	background-image: url("../inktober/bg.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	color: #222222;
+section#games{
+	background-color: #111111;
+	color: #EAE7DE;
+	min-height: 20vmin;
+}
+
+section#art{
+	background-color: #4A306D;
+	color: #EAE7DE;
 	min-height: 60vmin;
 }
 
-section#brobotto{
-	background-color: #2F3136;
-	min-height: 60vmin;
+section#music{
+	background-color: #D3931B;
+	color: #111111;
+	min-height: 20vmin;
 }
 
 section:last-child{
 	min-height: 40vmin;
+}
+
+.projectbox>img{
+	height: 350px;
+	border: solid 7px;
+	border-radius: 5px;
+	border-color: #222222;
+}
+.projectbox>center>p{
+	max-width: 350px;
 }

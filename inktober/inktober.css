@@ -72,6 +72,10 @@ section:nth-child(1){
 
 section:nth-child(2){
 	background-color: #222222;
+	background-image: url("bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 	min-height: 60vmin;
 }
 
