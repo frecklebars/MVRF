@@ -1,14 +1,148 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="style/style.css">
-<link rel="stylesheet" type="text/css" href="style/intro.css">
+<link rel="stylesheet" type="text/css" href="style/main.css">
+<script type="text/javascript" src="js/main.js"></script>
 <html>
 <head>
 	<title>buttered toast</title>
 </head>
 <body>
-	<br><br><br><br><br>
-	<center><img src="butteredtoast.png"></center>
-	<center><a href="homepage/index.html">< main ></a></center>
-	<br>
+	<section id="head">
+		<div class="verticalalign" style="margin-left: 10px">
+			butteredtoast / / . .
+		</div>
+	</section>
+
+	<section id="main">
+		<div class="intro verticalalign">
+			<h1>buttered toast</h1><br>
+			<p>developer, whatever medium</p>
+			<p>self teaching since 2000</p>
+			<br><br><br>
+		</div>
+	</section>
+
+	<section id="projects">
+		<p class="title">file archive .</p>
+		<hr><br>
+		<div class="projectmenu">
+			<a onclick="displayMenu(this.id)" id="1"> [ 01. ] software</a><br>
+			<div class="projectlist" id="menu1">
+				<a onclick="displayMenu(this.id)" id="101"> [ 101. ] colornet // neural network</a><br>
+				<div class="projectinfo" id="menu101">
+					<center>
+						<p class="title">Color Neural Net .</p>
+						<hr>
+						<br>
+						<img src="projects/colornet/netgolden.png">
+						<br><br>
+						<p class="pdescription">
+							Demo neural network. <br>
+							This was my hello world project in the field of AI, specifically neural networks. Made to learn and learned to make. Simple to explain. <br>
+							Written in python3 originally, then again a couple months later in JavaScript for an interactive demo.
+						</p><br>
+						<hr><br>
+						<p class="plinks"><a href="projects/colornet/index.html">< Live Demo ></a> / <a href="https://github.com/frecklebars/colornet">< GitHub ></a></p><br>
+					</center>
+					
+				</div>
+				<a onclick="displayMenu(this.id)" id="102"> [ 102. ] sweatshirt // lyrical markov</a><br>
+				<div class="projectinfo" id="menu102">
+					<center>
+						<p class="title" style="font-family: 'earl'">Sweatshirt .</p>
+						<hr>
+						<br>
+						<img src="projects/sweatshirt/ohcrap.png">
+						<br><br>
+						<p class="pdescription">
+							<span style="font-family: 'earl'">“To my son Thebe, whose growth and insights inspire me, a thousand kisses”</span><br><br>
+							Markov chain.<br>
+							Trained on lyrics from various albums such as Some Rap Songs, The Life of Pablo, MM FOOD, and many others. <br>
+							Comes with a simple lyrics scraper used to get the training data from Genius.
+						</p><br>
+						<hr><br>
+						<p class="plinks"><a href="https://github.com/frecklebars/sweatshirt">< GitHub ></a></p><br>
+					</center>
+				</div>
+				<a onclick="displayMenu(this.id)" id="103"> [ 103. ] brobotto // ????</a>
+				<div class="projectinfo" id="menu103">
+					<center>
+						<p class="title">Brobotto .</p>
+						<hr>
+						<br>
+						<img src="projects/brobotto/dogebanner.png">
+						<br><br>
+						<p class="pdescription">
+							Discord bot. <br>
+							There is no point. There is no light. There is only screaming. And then, nothing. <br>
+							Runs on my raspi. Unavailable at this point in time due to hardware issues, and me not caring enough to replace it.
+						</p><br>
+						<hr><br>
+						<p class="plinks"><a href="https://discordapp.com/oauth2/authorize?client_id=597062511929589790&permissions=125952&scope=bot">< Invite ></a> / <a href="https://github.com/frecklebars/brobotto">< GitHub ></a></p><br>
+					</center>
+				</div>
+			</div>
+			<a onclick="displayMenu(this.id)" id="2"> [ 02. ] games</a><br>
+			<div class="projectlist" id="menu2">
+				<a onclick="displayMenu(this.id)" id="201"> [ 201. ] Wash Away // point and click atmospheric horror;; UNRELEASED .</a>
+				<div class="projectinfo" id="menu201">
+					<center>
+						<p class="title">Wash Away .</p>
+						<hr>
+						<br>
+						<img src="projects/unnamed.jpg" width="100%">
+						<br><br>
+						<p class="pdescription">
+							Work in progress.
+						</p><br>
+						<hr><br>
+						<p class="plinks"><s> < ??? > </s></p><br>
+					</center>
+				</div>
+			</div>
+			<a onclick="displayMenu(this.id)" id="3"> [ 03. ] media</a><br>
+			<div class="projectlist" id="menu3">
+				<a onclick="displayMenu(this.id)" id="301"> [ 301. ] inktober // gallery</a>
+				<div class="projectinfo" id="menu301">
+					<center>
+						<p class="title">Inktober .</p>
+						<hr>
+						<br>
+						<img src="inktober/intro.jpg">
+						<br><br>
+						<p class="pdescription">
+							Art gallery. <br>
+							<em>"Every October, artists all over the world take on the Inktober drawing challenge by doing one ink drawing a day the entire month."</em> - <a href="https://inktober.com/">inktober.com</a> <br>
+							These are my submissions.
+
+						</p><br>
+						<hr><br>
+						<p class="plinks"><a href="inktober/index.html">< Gallery ></a></p><br>
+					</center>
+				</div>
+			</div>
+			<br>
+		</div>
+	</section>
+	</section>
+	<section id="contact">
+		<hr style="width: 85%">
+		<p class="title">sue me .</p>
+		<br><br>
+		<div class="contactinfo">
+			<p>Alexandru Popa, 19, "vaudevian"</p>
+			<p>popaalex@gmail.com</p><br>
+			<div class="icons">
+				<a href="https://github.com/frecklebars"><img class="icon" src="style/icons/github.svg"></a> / 
+				<a href="https://twitter.com/vaudevian"><img class="icon" src="style/icons/twitter.svg"></a> / 
+				<a href="https://www.instagram.com/vaudevian/"><img class="icon" src="style/icons/instagram.svg"></a> / 
+				<a href="https://www.facebook.com/alex.popa.376043"><img class="icon" src="style/icons/facebook.svg"></a> / 
+				<a href="https://rateyourmusic.com/~frecklebars"><img class="icon" src="style/icons/cd.svg"></a>
+			</div>
+		
+			<br><br>
+			<p>copyright © 2019-2020, vaudevian</p><br>
+		</div>
+	</section>
 </body>
 </html>

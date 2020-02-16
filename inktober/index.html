@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="../style/style.css">
 <link rel="stylesheet" type="text/css" href="inktober.css">
-<script type="text/javascript" src="inktober.js"></script>
-<script type="text/javascript" src="../js/master.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 <html>
 <head>
-	<title>my inktober stuff</title>
+	<title>inktober - buttered toast</title>
 </head>
-<body onload="endcontact()">
-	<section></section>
-	<section id="intro">
-		<a href="http://inktober.com"><img src="logo2.png" class="intrologo"></a>
-		<p class="intro" style="top: 85%">Archive for my Inktober drawings.<br><br><a href="../homepage/index.html"><< return</a></p>
-	</section>
-	<section><p class="intro">pick a theme!</p></section>
-	<section>
-		<div class="prompts">
-			<img onclick="switchpr(2018)" class="prompt" src="2018/prompt.jpg">
-			<img onclick="switchpr(2019)" class="prompt" src="2019/prompt.jpg">
-
+<body>
+	<section id="head">
+		<div class="verticalalign" style="margin-left: 10px">
+			<a href="../index.html">butteredtoast </a>/ inktober / / . .
 		</div>
 	</section>
-	<section>
-		<p class="link-section">select a prompt</p></section>
-	<section>
-		<div class="prompts">
-			<div class="prompt-sec">
-				<p onclick="display(this.id)" id="1">Day 1</p>
-				<p onclick="display(this.id)" id="2">Day 2</p>
-				<p onclick="display(this.id)" id="3">Day 3</p>
-				<p onclick="display(this.id)" id="4">Day 4</p>
-				<p onclick="display(this.id)" id="5">Day 5</p>
-				<p onclick="display(this.id)" id="6">Day 6</p>
-			</div>
-			<div class="prompt-sec">
-				<p onclick="display(this.id)" id="7">Day 7</p>
-				<p onclick="display(this.id)" id="8">Day 8</p>
-				<p onclick="display(this.id)" id="9">Day 9</p>
-				<p onclick="display(this.id)" id="10">Day 10</p>
-				<p onclick="display(this.id)" id="11">Day 11</p>
-				<p onclick="display(this.id)" id="12">Day 12</p>
-			</div>
-			<div class="prompt-sec">
-				<p onclick="display(this.id)" id="13">Day 13</p>
-				<p onclick="display(this.id)" id="14">Day 14</p>
-				<p onclick="display(this.id)" id="15">Day 15</p>
-				<p onclick="display(this.id)" id="16">Day 16</p>
-				<p onclick="display(this.id)" id="17">Day 17</p>
-				<p onclick="display(this.id)" id="18">Day 18</p>
-			</div>
-			<div class="prompt-sec">
-				<p onclick="display(this.id)" id="19">Day 19</p>
-				<p onclick="display(this.id)" id="20">Day 20</p>
-				<p onclick="display(this.id)" id="21">Day 21</p>
-				<p onclick="display(this.id)" id="22">Day 22</p>
-				<p onclick="display(this.id)" id="23">Day 23</p>
-				<p onclick="display(this.id)" id="24">Day 24</p>
-				
-			</div>
-			<div class="prompt-sec">
-				<p onclick="display(this.id)" id="25">Day 25</p>
-				<p onclick="display(this.id)" id="26">Day 26</p>
-				<p onclick="display(this.id)" id="27">Day 27</p>
-				<p onclick="display(this.id)" id="28">Day 28</p>
-				<p onclick="display(this.id)" id="29">Day 29</p>
-				<p onclick="display(this.id)" id="30">Day 30</p>
-				<p onclick="display(this.id)" id="31">Day 31</p>
-			</div>
-
+	<section id="header">
+		<div class="intro verticalalign">
+			<h1>inktober gallery</h1><br>
+			<p>2018 to 2019</p>
+			<p>and counting</p>
+			<br><br><br>
 		</div>
 	</section>
-	<section style="display: flex; justify-content: space-around;">
-		<img id="drawing" class="inktober-image debug" src="notfound.jpg" onerror="this.src='notfound.jpg';" />
-		<button onclick="button(1)" class="monkey button1"><<<</button><button onclick="button(2)" class="monkey button2">>>></button>
+	<section id="gallery">
+		<p class="title">gallery .</p>
+		<hr><br>
+		<div class="projectmenu">
+			<a onclick="displayMenu(this.id)" id="i2019"> [ 2019. ] chilltober</a><br>
+			<center>
+				<div class="gallery flex" id="menui2019">
+					<a href="2019/01.jpg"><img src="2019/01.jpg"></a>
+					<a href="2019/02.jpg"><img src="2019/02.jpg"></a>
+					<a href="2019/03.jpg"><img src="2019/03.jpg"></a>
+					<a href="2019/04.jpg"><img src="2019/04.jpg"></a>
+					<a href="2019/05.jpg"><img src="2019/05.jpg"></a>
+					<a href="2019/06.jpg"><img src="2019/06.jpg"></a>
+					<a href="2019/07.jpg"><img src="2019/07.jpg"></a>
+					<a href="2019/08.jpg"><img src="2019/08.jpg"></a>
+					<a href="2019/09.jpg"><img src="2019/09.jpg"></a>
+					<a href="2019/10.jpg"><img src="2019/10.jpg"></a>
+					<a href="2019/11.jpg"><img src="2019/11.jpg"></a>
+					<a href="2019/12.jpg"><img src="2019/12.jpg"></a>
+					<a href="2019/13.jpg"><img src="2019/13.jpg"></a>
+					<a href="2019/14.jpg"><img src="2019/14.jpg"></a>
+					<a href="2019/15.jpg"><img src="2019/15.jpg"></a>
+					<a href="2019/16.jpg"><img src="2019/16.jpg"></a>
+					<a href="2019/17.jpg"><img src="2019/17.jpg"></a>
+					<a href="2019/18.jpg"><img src="2019/18.jpg"></a>
+					<a href="2019/19.jpg"><img src="2019/19.jpg"></a>
+					<a href="2019/20.jpg"><img src="2019/20.jpg"></a>
+					<a href="2019/21.jpg"><img src="2019/21.jpg"></a>
+					<a href="2019/22.jpg"><img src="2019/22.jpg"></a>
+					<a href="2019/23.jpg"><img src="2019/23.jpg"></a>
+					<a href="2019/24.jpg"><img src="2019/24.jpg"></a>
+					<br><br>
+					<hr style="width: 85%">
+					<br>
+				</div>
+			</center>
+			
+			<a onclick="displayMenu(this.id)" id="i2018"> [ 2018. ] goretober</a><br>
+			<center>
+				<div class="gallery flex" id="menui2018">
+					<a href="2018/01.jpg"><img src="2018/01.jpg"></a>
+					<a href="2018/02.jpg"><img src="2018/02.jpg"></a>
+					<a href="2018/03.jpg"><img src="2018/03.jpg"></a>
+					<a href="2018/04.jpg"><img src="2018/04.jpg"></a>
+					<a href="2018/05.jpg"><img src="2018/05.jpg"></a>
+					<a href="2018/06.jpg"><img src="2018/06.jpg"></a>
+					<a href="2018/07.jpg"><img src="2018/07.jpg"></a>
+					<a href="2018/08.jpg"><img src="2018/08.jpg"></a>
+					<a href="2018/09.jpg"><img src="2018/09.jpg"></a>
+					<a href="2018/10.jpg"><img src="2018/10.jpg"></a>
+					<a href="2018/11.jpg"><img src="2018/11.jpg"></a>
+					<a href="2018/12.jpg"><img src="2018/12.jpg"></a>
+					<a href="2018/13.jpg"><img src="2018/13.jpg"></a>
+					<a href="2018/14.jpg"><img src="2018/14.jpg"></a>
+					<a href="2018/15.jpg"><img src="2018/15.jpg"></a>
+					<a href="2018/16.jpg"><img src="2018/16.jpg"></a>
+					<a href="2018/17.jpg"><img src="2018/17.jpg"></a>
+					<a href="2018/18.jpg"><img src="2018/18.jpg"></a>
+					<a href="2018/19.jpg"><img src="2018/19.jpg"></a>
+					<a href="2018/20.jpg"><img src="2018/20.jpg"></a>
+					<a href="2018/21.jpg"><img src="2018/21.jpg"></a>
+					<a href="2018/22.jpg"><img src="2018/22.jpg"></a>
+					<a href="2018/23.jpg"><img src="2018/23.jpg"></a>
+					<a href="2018/24.jpg"><img src="2018/24.jpg"></a>
+					<a href="2018/25.jpg"><img src="2018/25.jpg"></a>
+					<a href="2018/26.jpg"><img src="2018/26.jpg"></a>
+					<a href="2018/27.jpg"><img src="2018/27.jpg"></a>
+					<a href="2018/28.jpg"><img src="2018/28.jpg"></a>
+					<a href="2018/29.jpg"><img src="2018/29.jpg"></a>
+					<a href="2018/30.jpg"><img src="2018/30.jpg"></a>
+					<br><br>
+					<hr style="width: 85%">
+				</div>
+			</center>
+		</div>
+		<br><br>
 	</section>
-	<section>
-		<div id="endcontact"></div>
+	<section id="contact">
+		<hr style="width: 85%">
+		<p class="title">sue me .</p>
+		<br><br>
+		<div class="contactinfo">
+			<p>Alexandru Popa, 19, "vaudevian"</p>
+			<p>popaalex@gmail.com</p><br>
+			<div class="icons">
+				<a href="https://github.com/frecklebars"><img class="icon" src="../style/icons/github.svg"></a> / 
+				<a href="https://twitter.com/vaudevian"><img class="icon" src="../style/icons/twitter.svg"></a> / 
+				<a href="https://www.instagram.com/vaudevian/"><img class="icon" src="../style/icons/instagram.svg"></a> / 
+				<a href="https://www.facebook.com/alex.popa.376043"><img class="icon" src="../style/icons/facebook.svg"></a> / 
+				<a href="https://rateyourmusic.com/~frecklebars"><img class="icon" src="../style/icons/cd.svg"></a>
+			</div>
+		
+			<br><br>
+			<p>copyright © 2019-2020, vaudevian</p><br>
+		</div>
 	</section>
 </body>
 </html>
