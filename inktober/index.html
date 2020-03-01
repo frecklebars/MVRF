@@ -2,14 +2,28 @@
 <link rel="stylesheet" type="text/css" href="../style/style.css">
 <link rel="stylesheet" type="text/css" href="inktober.css">
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/clock.js"></script>
 <html>
 <head>
 	<title>inktober - buttered toast</title>
 </head>
-<body>
+<body onload="startTime()">
 	<section id="head">
 		<div class="verticalalign" style="margin-left: 10px">
 			<a href="../index.html">butteredtoast </a>/ inktober / / . .
+		</div>
+		<div class="clock">
+			<span class="time">
+				<span id="h"></span> : 
+				<span id="m"></span> : 
+				<span id="s"></span> : 
+				<span id="mi"></span>
+			</span>
+			<span class="days">
+				<span id="mon"></span> 
+				<span id="dy"></span> 
+				<span id="y"></span>
+			</span>
 		</div>
 	</section>
 	<section id="header">
