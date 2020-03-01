@@ -9,6 +9,7 @@ function startTime() {
   var mo = today.getMonth();
   var dy = today.getDate();
   var yr = today.getFullYear();
+  h = checkTime(h);
   m = checkTime(m);
   s = checkTime(s);
   mi = checkTime(mi);
