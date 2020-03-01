@@ -70,18 +70,20 @@ hr{
 	border-top: 3px solid var(--main-white);
 }
 
+.clock{
+	transform: translateY(50%);
+	float: right;
+	padding-right: 10px;
+	width: 255px;
+}
+
 .time{
-	position: fixed;
-	width: 120px;
-	right: 150px;
-	top: 10px;
+	position: absolute;
+	float: left;
 }
 
 .days{
-	position: fixed;
-	width: 150px;
-	right: 0px;
-	top: 10px;
+	float: right;
 }
 
 
