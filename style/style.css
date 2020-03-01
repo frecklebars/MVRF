@@ -70,6 +70,21 @@ hr{
 	border-top: 3px solid var(--main-white);
 }
 
+.time{
+	position: fixed;
+	width: 120px;
+	right: 150px;
+	top: 10px;
+}
+
+.days{
+	position: fixed;
+	width: 150px;
+	right: 0px;
+	top: 10px;
+}
+
+
 .verticalalign{
 	position: absolute;
 	top: 50%;

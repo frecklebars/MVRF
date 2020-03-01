@@ -2,15 +2,30 @@
 <link rel="stylesheet" type="text/css" href="style/style.css">
 <link rel="stylesheet" type="text/css" href="style/main.css">
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/clock.js"></script>
 <html>
 <head>
 	<title>buttered toast</title>
 </head>
-<body>
+<body onload="startTime()">
 	<section id="head">
 		<div class="verticalalign" style="margin-left: 10px">
 			butteredtoast / / . .
 		</div>
+		<div>
+			<span class="time">
+				<span id="h"></span> : 
+				<span id="m"></span> : 
+				<span id="s"></span> : 
+				<span id="mi"></span>
+			</span>
+			<span class="days">
+				<span id="mon"></span> 
+				<span id="dy"></span> 
+				<span id="y"></span>
+			</span>
+		</div>
+		
 	</section>
 
 	<section id="main">
