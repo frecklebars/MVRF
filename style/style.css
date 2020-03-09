@@ -71,10 +71,11 @@ hr{
 }
 
 .clock{
-	transform: translateY(50%);
-	float: right;
-	padding-right: 10px;
-	width: 272px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	width: 300px;
 }
 
 .time{
