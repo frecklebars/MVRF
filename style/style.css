@@ -206,11 +206,21 @@ div.gallery{
 	color: var(--main-white);
 }
 
+div.gallery>a{
+	text-decoration: none;
+}
+
 div.gallery>a>img{
 	max-width: 300px;
 	height: auto;
 	border: 3px solid var(--main-white);
 	margin: 7px 7px 7px 7px;
+}
+
+div.gallery>a>p{
+	max-width: 300px;
+	color: var(--main-white);
+	font-size: 24px;
 }
 /*/////////////////////*/
 

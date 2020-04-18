@@ -1,7 +1,7 @@
 var displayMode = "block";
 
 function displayMenu(id){
-	if(id.startsWith("i")){
+	if(id.startsWith("f")){
 		displayMode = "flex";
 	}
 	id = "menu" + id;
