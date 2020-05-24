@@ -7,61 +7,57 @@
 <head>
 	<title>art - buttered toast</title>
 </head>
-<body onload="startTime(); ccardsetup(1)">
+<body onload="setup(1)">
 	<section id="head">
 		<div class="verticalalign" style="margin-left: 10px">
 			<a href="../index.html">butteredtoast </a>/ art / / . .
 		</div>
-		<div class="clock" id="clock">
-			<span class="time">
-				<span id="h"></span> : 
-				<span id="m"></span> : 
-				<span id="s"></span> : 
-				<span id="mi"></span>
-			</span>
-			<span class="days">
-				<span id="mon"></span> 
-				<span id="dy"></span> 
-				<span id="y"></span>
-			</span>
-		</div>
+		<div class="clock" id="clock"></div>
 	</section>
 	<section id="header">
 		<div class="intro verticalalign">
-			<h1>miscellaneous art</h1><br>
+			<h1>art gallery</h1><br>
 		</div>
 	</section>
 	<section id="gallery">
 		<p class="title">gallery .</p>
 		<hr><br>
-		<div class="projectmenu">
-			<a onclick="displayMenu(this.id)" id="f101"> [ >> . ] all</a>
+		<p class="subtitle">[ >>. ] map .</p>
+		<div class="tableofcontents">
 			<center>
-				<div class="gallery flex" id="menuf101">
-					<a href="all/timeless.png"><img src="all/timeless.png"><p>"timeless"</p></a>
-					<a href="all/canigetakiss2.png"><img src="all/canigetakiss2.png"><p>"can i get a kiss" 2""</p></a>
-					<br><br>
-					<hr style="width: 85%">
-					<br>
-				</div>
-			</center>
+				<a href="#artall">< all ></a>  / 
+				<a href="#artisolated">< Isolated Art Challenge ></a>
 
-			<a onclick="displayMenu(this.id)" id="f102"> [ >> . ] Isolated Art Challenge by @struthless69</a><br>
-			<center>
-				<div class="gallery flex" id="menuf102">
-					<a href="isolatedartchallenge/tat.png"><img src="isolatedartchallenge/tat.png"><p>A pandemic themed tattoo</p></a>
-					<a href="isolatedartchallenge/corona.png"><img src="isolatedartchallenge/corona.png"><p>Corona Beer's new marketing strategy</p></a>
-					<a href="isolatedartchallenge/ofhscta.png"><img src="isolatedartchallenge/ofhscta.png"><p>A band name, but replace one word with "hand sanitizer"</p></a>
-					<a href="isolatedartchallenge/worm.png"><img src="isolatedartchallenge/worm.png"><p>Something around the house that should NEVER replace toilet paper</p></a>
-					<a href="isolatedartchallenge/quarantinetimefinal.png"><img src="isolatedartchallenge/quarantinetimefinal.png"><p>Self Portrait in isolation</p></a>
-					<a href="isolatedartchallenge/hazmat chan.png"><img src="isolatedartchallenge/hazmat chan.png"><p>"A Hazmat Suit but make it fashion"</p></a>
-					<a href="https://www.instagram.com/struthless69/"><img src="isolatedartchallenge/prompt.jpg"><p>@struthless69</p></a>
-					<br><br>
-					<hr style="width: 85%">
-					<br>
-				</div>
+				<br><br><hr>
 			</center>
 		</div>
+		<p class="subtitle" id="artall"> [ >> . ] all .</p>
+		<center>
+			<div class="gallery flex" id="menuf101">
+				<a href="all/6fan.png"><img src="all/thumbs/6fan.png"><p>6 fanart challenge</p></a>
+				<a href="all/coral.png"><img src="all/thumbs/coral.png"><p>"coral" (@gabriellemarinart dtiys)</p></a>
+				<a href="all/timeless.png"><img src="all/thumbs/timeless.png"><p>"timeless"</p></a>
+				<a href="all/canigetakiss2.png"><img src="all/thumbs/canigetakiss2.png"><p>"can i get a kiss" 2</p></a>
+				<br><br>
+				<hr style="width: 85%">
+				<br>
+			</div>
+		</center>
+		<br>
+		<p class="subtitle" id="artisolated"> [ >> . ] Isolated Art Challenge by <a href="https://www.instagram.com/struthless69">@struthless69</a> .</p><br>
+		<center>
+			<div class="gallery flex" id="menuf102">
+				<a href="isolatedartchallenge/tat.png"><img src="isolatedartchallenge/thumbs/tat.png"><p>A pandemic themed tattoo</p></a>
+				<a href="isolatedartchallenge/corona.png"><img src="isolatedartchallenge/thumbs/corona.png"><p>Corona Beer's new marketing strategy</p></a>
+				<a href="isolatedartchallenge/ofhscta.png"><img src="isolatedartchallenge/thumbs/ofhscta.png"><p>A band name, but replace one word with "hand sanitizer"</p></a>
+				<a href="isolatedartchallenge/worm.png"><img src="isolatedartchallenge/thumbs/worm.png"><p>Something around the house that should NEVER replace toilet paper</p></a>
+				<a href="isolatedartchallenge/quarantinetimefinal.png"><img src="isolatedartchallenge/thumbs/quarantinetimefinal.png"><p>Self Portrait in isolation</p></a>
+				<a href="isolatedartchallenge/hazmat chan.png"><img src="isolatedartchallenge/thumbs/hazmat chan.png"><p>"A Hazmat Suit but make it fashion"</p></a>
+				<br><br>
+				<hr style="width: 85%">
+				<br>
+			</div>
+		</center>
 		<br><br>
 	</section>
 	<section id="contact">

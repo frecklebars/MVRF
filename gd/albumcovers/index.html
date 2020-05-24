@@ -7,24 +7,12 @@
 <head>
 	<title>album covers - buttered toast</title>
 </head>
-<body onload="startTime(); ccardsetup(2)">
+<body onload="setup(2);">
 	<section id="head">
 		<div class="verticalalign" style="margin-left: 10px">
 			<a href="../../index.html">butteredtoast </a>/ gd / alt album covers / / . .
 		</div>
-		<div class="clock" id="clock">
-			<span class="time">
-				<span id="h"></span> : 
-				<span id="m"></span> : 
-				<span id="s"></span> : 
-				<span id="mi"></span>
-			</span>
-			<span class="days">
-				<span id="mon"></span> 
-				<span id="dy"></span> 
-				<span id="y"></span>
-			</span>
-		</div>
+		<div class="clock" id="clock"></div>
 	</section>
 	<section id="header">
 		<div class="intro verticalalign">
@@ -34,35 +22,41 @@
 	<section id="gallery">
 		<p class="title">gallery .</p>
 		<hr><br>
-		<div class="projectmenu">
-			<a onclick="displayMenu(this.id)" id="f101"> [ >> . ] alternates</a>
+		<p class="subtitle">[ >>. ] map .</p>
+		<div class="tableofcontents">
 			<center>
-				<div class="gallery flex" id="menuf101">
-					<a href="g/tlop.png"><img src="g/tlop.png"><p>The Life of Pablo - Kanye West</p></a>
-					<br><br>
-					<hr style="width: 85%">
-					<br>
-				</div>
-			</center>
-			
-			<a onclick="displayMenu(this.id)" id="f102"> [ >> . ] self inserts</a>
-			<center>
-				<div class="gallery flex" id="menuf102">
-					<a href="self/wolf.png"><img src="self/wolf.png"><p>Wolf - Tyler, the Creator</p></a>
-					<a href="self/honeymoon.png"><img src="self/honeymoon.png"><p>Honeymoon - Lana del Rey</p></a>
-					<a href="self/bottomless.png"><img src="self/bottomless.png"><p>Bottomless Pit - Death Grips</p></a>
-					<a href="self/somerapsongs.png"><img src="self/somerapsongs.png"><p>Some Rap Songs - Earl Sweatshirt</p></a>
-					<a href="self/blonde.png"><img src="self/blonde.png"><p>Blonde - Frank Ocean</p></a>
-					<a href="self/igor.png"><img src="self/igor.png"><p>IGOR - Tyler, the Creator</p></a>
-					<a href="self/testing.png"><img src="self/testing.png"><p>Testing - A$AP Rocky</p></a>
-					<br><br>
-					<hr style="width: 85%">
-					<br>
-				</div>
-			</center>
-			
+				<a href="#alts">< alts ></a>  / 
+				<a href="#selfs">< self ></a>
 
+				<br><br><hr>
+			</center>
 		</div>
+		<p class="subtitle" id="alts"> [ >> . ] alternates</a>
+		<center>
+			<div class="gallery flex" id="menuf101">
+				<a href="g/tlop.png"><img src="g/thumbs/tlop.png"><p>The Life of Pablo - Kanye West</p></a>
+				<br><br>
+				<hr style="width: 85%">
+				<br>
+			</div>
+		</center>
+		
+		<p class="subtitle" id="selfs"> [ >> . ] self inserts</a>
+		<center>
+			<div class="gallery flex" id="menuf102">
+				<a href="self/wolf.png"><img src="self/wolf.png"><p>Wolf - Tyler, the Creator</p></a>
+				<a href="self/honeymoon.png"><img src="self/thumbs/honeymoon.png"><p>Honeymoon - Lana del Rey</p></a>
+				<a href="self/bottomless.png"><img src="self/thumbs/bottomless.png"><p>Bottomless Pit - Death Grips</p></a>
+				<a href="self/somerapsongs.png"><img src="self/thumbs/somerapsongs.png"><p>Some Rap Songs - Earl Sweatshirt</p></a>
+				<a href="self/blonde.png"><img src="self/thumbs/blonde.png"><p>Blonde - Frank Ocean</p></a>
+				<a href="self/igor.png"><img src="self/thumbs/igor.png"><p>IGOR - Tyler, the Creator</p></a>
+				<a href="self/testing.png"><img src="self/thumbs/testing.png"><p>Testing - A$AP Rocky</p></a>
+				<br><br>
+				<hr style="width: 85%">
+				<br>
+			</div>
+		</center>
+			
 		<br><br>
 	</section>
 	<section id="contact">

@@ -7,24 +7,12 @@
 <head>
 	<title>inktober - buttered toast</title>
 </head>
-<body onload="startTime(); ccardsetup(1)">
+<body onload="setup(1)">
 	<section id="head">
 		<div class="verticalalign" style="margin-left: 10px">
 			<a href="../index.html">butteredtoast </a>/ inktober / / . .
 		</div>
-		<div class="clock" id="clock">
-			<span class="time">
-				<span id="h"></span> : 
-				<span id="m"></span> : 
-				<span id="s"></span> : 
-				<span id="mi"></span>
-			</span>
-			<span class="days">
-				<span id="mon"></span> 
-				<span id="dy"></span> 
-				<span id="y"></span>
-			</span>
-		</div>
+		<div class="clock" id="clock"></div>
 	</section>
 	<section id="header">
 		<div class="intro verticalalign">
@@ -35,78 +23,85 @@
 	<section id="gallery">
 		<p class="title">gallery .</p>
 		<hr><br>
-		<div class="projectmenu">
-			<a onclick="displayMenu(this.id)" id="f2019"> [ 2019. ] chilltober</a><br>
+		<p class="subtitle">[ >>. ] map .</p>
+		<div class="tableofcontents">
 			<center>
-				<div class="gallery flex" id="menuf2019">
-					<a href="2019/01.jpg"><img src="2019/01.jpg"><p>"Fire"</p></a>
-					<a href="2019/02.jpg"><img src="2019/02.jpg"><p>"Calm"</p></a>
-					<a href="2019/03.jpg"><img src="2019/03.jpg"><p>"Tea"</p></a>
-					<a href="2019/04.jpg"><img src="2019/04.jpg"><p>"Cookies"</p></a>
-					<a href="2019/05.jpg"><img src="2019/05.jpg"><p>"Pumpkin"</p></a>
-					<a href="2019/06.jpg"><img src="2019/06.jpg"><p>"Powernap"</p></a>
-					<a href="2019/07.jpg"><img src="2019/07.jpg"><p>"Cherry Pie"</p></a>
-					<a href="2019/08.jpg"><img src="2019/08.jpg"><p>"Chicken"</p></a>
-					<a href="2019/09.jpg"><img src="2019/09.jpg"><p>"Ghost"</p></a>
-					<a href="2019/10.jpg"><img src="2019/10.jpg"><p>"Warm Socks"</p></a>
-					<a href="2019/11.jpg"><img src="2019/11.jpg"><p>"Cozy"</p></a>
-					<a href="2019/12.jpg"><img src="2019/12.jpg"><p>"Ice Cream"</p></a>
-					<a href="2019/13.jpg"><img src="2019/13.jpg"><p>"Magical Bunny"</p></a>
-					<a href="2019/14.jpg"><img src="2019/14.jpg"><p>"Blanket"</p></a>
-					<a href="2019/15.jpg"><img src="2019/15.jpg"><p>"Potion"</p></a>
-					<a href="2019/16.jpg"><img src="2019/16.jpg"><p>"Rain"</p></a>
-					<a href="2019/17.jpg"><img src="2019/17.jpg"><p>"Cake"</p></a>
-					<a href="2019/18.jpg"><img src="2019/18.jpg"><p>"Falling"</p></a>
-					<a href="2019/19.jpg"><img src="2019/19.jpg"><p>"Giant Scarf"</p></a>
-					<a href="2019/20.jpg"><img src="2019/20.jpg"><p>"Spooky Sloth"</p></a>
-					<a href="2019/21.jpg"><img src="2019/21.jpg"><p>"Wind"</p></a>
-					<a href="2019/22.jpg"><img src="2019/22.jpg"><p>"Quiet"</p></a>
-					<a href="2019/23.jpg"><img src="2019/23.jpg"><p>"Plant"</p></a>
-					<a href="2019/24.jpg"><img src="2019/24.jpg"><p>"Haunted House"</p></a>
-					<br><br>
-					<hr style="width: 85%">
-					<br>
-				</div>
-			</center>
-			
-			<a onclick="displayMenu(this.id)" id="f2018"> [ 2018. ] goretober</a><br>
-			<center>
-				<div class="gallery flex" id="menuf2018">
-					<a href="2018/01.jpg"><img src="2018/01.jpg"><p>"Scar Tissue"</p></a>
-					<a href="2018/02.jpg"><img src="2018/02.jpg"><p>"Plant Life"</p></a>
-					<a href="2018/03.jpg"><img src="2018/03.jpg"><p>"Vivisection"</p></a>
-					<a href="2018/04.jpg"><img src="2018/04.jpg"><p>"Stabbed"</p></a>
-					<a href="2018/05.jpg"><img src="2018/05.jpg"><p>"Bile"</p></a>
-					<a href="2018/06.jpg"><img src="2018/06.jpg"><p>"Angelic"</p></a>
-					<a href="2018/07.jpg"><img src="2018/07.jpg"><p>"Possessed"</p></a>
-					<a href="2018/08.jpg"><img src="2018/08.jpg"><p>"Sacrifice"</p></a>
-					<a href="2018/09.jpg"><img src="2018/09.jpg"><p>"Apocalypse"</p></a>
-					<a href="2018/10.jpg"><img src="2018/10.jpg"><p>"Bruises"</p></a>
-					<a href="2018/11.jpg"><img src="2018/11.jpg"><p>"Eyes"</p></a>
-					<a href="2018/12.jpg"><img src="2018/12.jpg"><p>"Spliced Together"</p></a>
-					<a href="2018/13.jpg"><img src="2018/13.jpg"><p>"Battle Wounds"</p></a>
-					<a href="2018/14.jpg"><img src="2018/14.jpg"><p>"Impalement"</p></a>
-					<a href="2018/15.jpg"><img src="2018/15.jpg"><p>"Godhood"</p></a>
-					<a href="2018/16.jpg"><img src="2018/16.jpg"><p>"Arrows"</p></a>
-					<a href="2018/17.jpg"><img src="2018/17.jpg"><p>"Extra Limbs"</p></a>
-					<a href="2018/18.jpg"><img src="2018/18.jpg"><p>"Horns"</p></a>
-					<a href="2018/19.jpg"><img src="2018/19.jpg"><p>"Burned"</p></a>
-					<a href="2018/20.jpg"><img src="2018/20.jpg"><p>"Demonic"</p></a>
-					<a href="2018/21.jpg"><img src="2018/21.jpg"><p>"Experiment"</p></a>
-					<a href="2018/22.jpg"><img src="2018/22.jpg"><p>"Bandages"</p></a>
-					<a href="2018/23.jpg"><img src="2018/23.jpg"><p>"Decapitated"</p></a>
-					<a href="2018/24.jpg"><img src="2018/24.jpg"><p>"Zombie"</p></a>
-					<a href="2018/25.jpg"><img src="2018/25.jpg"><p>"Draconic"</p></a>
-					<a href="2018/26.jpg"><img src="2018/26.jpg"><p>"Cyborg"</p></a>
-					<a href="2018/27.jpg"><img src="2018/27.jpg"><p>"Turned to Stone"</p></a>
-					<a href="2018/28.jpg"><img src="2018/28.jpg"><p>"Wings"</p></a>
-					<a href="2018/29.jpg"><img src="2018/29.jpg"><p>"Nosebleed"</p></a>
-					<a href="2018/30.jpg"><img src="2018/30.jpg"><p>"Hanahaki Disease"</p></a>
-					<br><br>
-					<hr style="width: 85%">
-				</div>
+				<a href="#ink2019">< 2019 ></a>  / 
+				<a href="#ink2018">< 2018 ></a>
+
+				<br><br><hr>
 			</center>
 		</div>
+		<p class="subtitle" id="ink2019"> [ 2019. ] chilltober</p><br>
+		<center>
+			<div class="gallery flex" id="menuf2019">
+				<a href="2019/01.jpg"><img src="2019/01.jpg"><p>"Fire"</p></a>
+				<a href="2019/02.jpg"><img src="2019/02.jpg"><p>"Calm"</p></a>
+				<a href="2019/03.jpg"><img src="2019/03.jpg"><p>"Tea"</p></a>
+				<a href="2019/04.jpg"><img src="2019/04.jpg"><p>"Cookies"</p></a>
+				<a href="2019/05.jpg"><img src="2019/05.jpg"><p>"Pumpkin"</p></a>
+				<a href="2019/06.jpg"><img src="2019/06.jpg"><p>"Powernap"</p></a>
+				<a href="2019/07.jpg"><img src="2019/07.jpg"><p>"Cherry Pie"</p></a>
+				<a href="2019/08.jpg"><img src="2019/08.jpg"><p>"Chicken"</p></a>
+				<a href="2019/09.jpg"><img src="2019/09.jpg"><p>"Ghost"</p></a>
+				<a href="2019/10.jpg"><img src="2019/10.jpg"><p>"Warm Socks"</p></a>
+				<a href="2019/11.jpg"><img src="2019/11.jpg"><p>"Cozy"</p></a>
+				<a href="2019/12.jpg"><img src="2019/12.jpg"><p>"Ice Cream"</p></a>
+				<a href="2019/13.jpg"><img src="2019/13.jpg"><p>"Magical Bunny"</p></a>
+				<a href="2019/14.jpg"><img src="2019/14.jpg"><p>"Blanket"</p></a>
+				<a href="2019/15.jpg"><img src="2019/15.jpg"><p>"Potion"</p></a>
+				<a href="2019/16.jpg"><img src="2019/16.jpg"><p>"Rain"</p></a>
+				<a href="2019/17.jpg"><img src="2019/17.jpg"><p>"Cake"</p></a>
+				<a href="2019/18.jpg"><img src="2019/18.jpg"><p>"Falling"</p></a>
+				<a href="2019/19.jpg"><img src="2019/19.jpg"><p>"Giant Scarf"</p></a>
+				<a href="2019/20.jpg"><img src="2019/20.jpg"><p>"Spooky Sloth"</p></a>
+				<a href="2019/21.jpg"><img src="2019/21.jpg"><p>"Wind"</p></a>
+				<a href="2019/22.jpg"><img src="2019/22.jpg"><p>"Quiet"</p></a>
+				<a href="2019/23.jpg"><img src="2019/23.jpg"><p>"Plant"</p></a>
+				<a href="2019/24.jpg"><img src="2019/24.jpg"><p>"Haunted House"</p></a>
+				<br><br>
+				<hr style="width: 85%">
+				<br>
+			</div>
+		</center>
+		
+		<p class="subtitle" id="ink2018"> [ 2018. ] goretober</a><br>
+		<center>
+			<div class="gallery flex" id="menuf2018">
+				<a href="2018/01.jpg"><img src="2018/01.jpg"><p>"Scar Tissue"</p></a>
+				<a href="2018/02.jpg"><img src="2018/02.jpg"><p>"Plant Life"</p></a>
+				<a href="2018/03.jpg"><img src="2018/03.jpg"><p>"Vivisection"</p></a>
+				<a href="2018/04.jpg"><img src="2018/04.jpg"><p>"Stabbed"</p></a>
+				<a href="2018/05.jpg"><img src="2018/05.jpg"><p>"Bile"</p></a>
+				<a href="2018/06.jpg"><img src="2018/06.jpg"><p>"Angelic"</p></a>
+				<a href="2018/07.jpg"><img src="2018/07.jpg"><p>"Possessed"</p></a>
+				<a href="2018/08.jpg"><img src="2018/08.jpg"><p>"Sacrifice"</p></a>
+				<a href="2018/09.jpg"><img src="2018/09.jpg"><p>"Apocalypse"</p></a>
+				<a href="2018/10.jpg"><img src="2018/10.jpg"><p>"Bruises"</p></a>
+				<a href="2018/11.jpg"><img src="2018/11.jpg"><p>"Eyes"</p></a>
+				<a href="2018/12.jpg"><img src="2018/12.jpg"><p>"Spliced Together"</p></a>
+				<a href="2018/13.jpg"><img src="2018/13.jpg"><p>"Battle Wounds"</p></a>
+				<a href="2018/14.jpg"><img src="2018/14.jpg"><p>"Impalement"</p></a>
+				<a href="2018/15.jpg"><img src="2018/15.jpg"><p>"Godhood"</p></a>
+				<a href="2018/16.jpg"><img src="2018/16.jpg"><p>"Arrows"</p></a>
+				<a href="2018/17.jpg"><img src="2018/17.jpg"><p>"Extra Limbs"</p></a>
+				<a href="2018/18.jpg"><img src="2018/18.jpg"><p>"Horns"</p></a>
+				<a href="2018/19.jpg"><img src="2018/19.jpg"><p>"Burned"</p></a>
+				<a href="2018/20.jpg"><img src="2018/20.jpg"><p>"Demonic"</p></a>
+				<a href="2018/21.jpg"><img src="2018/21.jpg"><p>"Experiment"</p></a>
+				<a href="2018/22.jpg"><img src="2018/22.jpg"><p>"Bandages"</p></a>
+				<a href="2018/23.jpg"><img src="2018/23.jpg"><p>"Decapitated"</p></a>
+				<a href="2018/24.jpg"><img src="2018/24.jpg"><p>"Zombie"</p></a>
+				<a href="2018/25.jpg"><img src="2018/25.jpg"><p>"Draconic"</p></a>
+				<a href="2018/26.jpg"><img src="2018/26.jpg"><p>"Cyborg"</p></a>
+				<a href="2018/27.jpg"><img src="2018/27.jpg"><p>"Turned to Stone"</p></a>
+				<a href="2018/28.jpg"><img src="2018/28.jpg"><p>"Wings"</p></a>
+				<a href="2018/29.jpg"><img src="2018/29.jpg"><p>"Nosebleed"</p></a>
+				<a href="2018/30.jpg"><img src="2018/30.jpg"><p>"Hanahaki Disease"</p></a>
+				<br><br>
+				<hr style="width: 85%">
+			</div>
+		</center>
 		<br><br>
 	</section>
 	<section id="contact">
