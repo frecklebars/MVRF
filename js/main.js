@@ -48,15 +48,14 @@ function ccardsetup(n){
 		}
 	}
 	var ccard = "";
-	ccard += '<p>Alexandru Popa, 19</p>';
-	ccard += '		<p>aka. "frecklebars", "vaudevian"</p>';
+	ccard += '<p>Alexandru Popa, 19, "frecklebars"</p>';
 	ccard += '		<p>popaalex@gmail.com</p><br> ';
 	ccard += '		<div class="icons"> ';
 	ccard += '			<a href="https://github.com/frecklebars"><img class="icon" src="'+ backPath + 'style/icons/github.svg"></a> / ';
 	ccard += '			<a href="https://frecklebars.itch.io/"><img class="icon" src="' + backPath + 'style/icons/itchio.svg"></a> / ';
 	ccard += '			<a href="https://twitter.com/frecklebars"><img class="icon" src="'+ backPath + 'style/icons/twitter.svg"></a> / ';
 	ccard += '			<a href="https://www.instagram.com/frecklebars/"><img class="icon" src="'+ backPath + 'style/icons/instagram.svg"></a> / ';
-	ccard += '			<a href="https://www.instagram.com/vaudevian/"><img class="icon" src="'+ backPath + 'style/icons/instagram.svg"></a> / ';
+	ccard += '			<a href="https://discord.gg/yeFg48V"><img class="icon" src="'+ backPath + 'style/icons/discord.svg"></a> / ';
 	ccard += '			<a href="https://open.spotify.com/user/3cxkyoe0z7lja736z4zi0cmyl?si=ka2y4_CdSByctSKJauIzNg"><img class="icon" src="'+ backPath + 'style/icons/spotify.svg"></a> / ';
 	ccard += '			<a href="https://www.facebook.com/alex.popa.376043"><img class="icon" src="'+ backPath + 'style/icons/facebook.svg"></a> / ';
 	ccard += '			<a href="https://rateyourmusic.com/~frecklebars"><img class="icon" src="'+ backPath + 'style/icons/cd.svg"></a>';
