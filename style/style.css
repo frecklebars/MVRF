@@ -92,7 +92,6 @@ p{
 	float: right;
 }
 
-
 .verticalalign{
 	position: absolute;
 	top: 50%;
@@ -110,8 +109,6 @@ p{
 	font-size: 36px;
 }
 
-.introimg{
-}
 .introimg>img{
 	max-height: 400px;
 }
@@ -131,13 +128,18 @@ p.subtitle2{
 	font-size: 22px;
 }
 
+p.textbody{
+	font-size: 24px;
+	margin: 0 0 0 5%;
+}
+
 div.projectmenu{
 	margin: 0 0 0 5%;
 }
 
 div.projectmenu>a{
 	color: var(--main-white);
-	font-size: 22px;
+	font-size: 24px;
 	margin: 10px 0 10px 0;
 }
 
@@ -153,7 +155,7 @@ div.projectlist{
 
 div.projectlist>a{
 	color: var(--main-white);
-	font-size: 20px;
+	font-size: 24px;
 	margin: 10px 0 10px 0;
 }
 
@@ -168,6 +170,10 @@ div.projectinfo{
 	border: solid 3px var(--main-white);
 	width: 50vw;
 }
+
+/* hey its me like an year after writing this code
+i really shouldve documented this ive no idea what
+all of these are for */
 
 div.projectinfo>center{
 	font-size: 28px;

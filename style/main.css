@@ -15,6 +15,10 @@ section#main{
 	color: #111111;
 }
 
+section#intro{
+	min-height: 35vmin;
+}
+
 section#projects{
 	min-height: 35vmin;
 }
