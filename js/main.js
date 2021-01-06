@@ -48,7 +48,7 @@ function ccardsetup(n){
 		}
 	}
 	var ccard = "";
-	ccard += '<p>Alexandru Popa, 19, "frecklebars"</p>';
+	ccard += '<p>Alexandru Popa, 20, "frecklebars"</p>';
 	ccard += '		<p>popaalex@gmail.com</p><br> ';
 	ccard += '		<div class="icons"> ';
 	ccard += '			<a href="https://github.com/frecklebars"><img class="icon" src="'+ backPath + 'style/icons/github.svg"></a> / ';
@@ -61,7 +61,7 @@ function ccardsetup(n){
 	ccard += '			<a href="https://rateyourmusic.com/~frecklebars"><img class="icon" src="'+ backPath + 'style/icons/cd.svg"></a>';
 	ccard += '		</div>';
 	ccard += '		<br><br>';
-	ccard += '		<p>copyright © 2019-2020, Alexandru Popa</p><br><hr><br>';
+	ccard += '		<p>copyright © 2019-2021, Alexandru Popa</p><br><hr><br>';
 	document.getElementById("contactcard").innerHTML = ccard;
 }
 
