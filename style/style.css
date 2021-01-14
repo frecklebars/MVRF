@@ -272,6 +272,14 @@ div.tableofcontents>center>a:hover{
 	background-color: var(--purple);
 	text-decoration: none;
 }
+
+.bigbutton{
+	font-size: 52px;
+	border: solid;
+	border-color: var(--main-white);
+	padding: 15px;
+	border-radius: 5px;
+}
 /*/////////////////////*/
 
 section#head{
