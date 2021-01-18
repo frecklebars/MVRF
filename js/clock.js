@@ -1,7 +1,7 @@
 
 function startTime() {
   var months = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
-  var space = [300, 310, 280, 265, 240, 250, 250, 290, 325, 300, 320, 315];
+  var space = [290, 310, 280, 265, 240, 250, 250, 290, 325, 300, 320, 315];
   var today = new Date();
   var h = today.getHours();
   var m = today.getMinutes();
