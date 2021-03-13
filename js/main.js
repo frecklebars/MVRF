@@ -49,7 +49,7 @@ function ccardsetup(n){
 	}
 	var ccard = "";
 	ccard += '<p>Alexandru Popa, 20, "frecklebars"</p>';
-	ccard += '		<p>popaalex@gmail.com</p><br> ';
+	ccard += '		<p>popaalex440@gmail.com</p><br> ';
 	ccard += '		<div class="icons"> ';
 	ccard += '			<a href="https://github.com/frecklebars"><img class="icon" src="'+ backPath + 'style/icons/github.svg"></a> / ';
 	ccard += '			<a href="https://frecklebars.itch.io/"><img class="icon" src="' + backPath + 'style/icons/itchio.svg"></a> / ';
