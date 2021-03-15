@@ -6,3 +6,19 @@ body{
     background-position: center;
 }
 
+.mainintro{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+
+    margin: 0 50px;
+}
+
+.mainintro h1{
+    font-size: 60px;
+}
+
+.mainintro p{
+    font-size: 32px;
+}
+

@@ -39,7 +39,7 @@ body{
 
 .navbar div{
     padding: 10px;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .botbar{
@@ -55,8 +55,11 @@ body{
 
 .botbar a{
     padding: 10px;
-    margin: 0 5px 5px 5px;
-    font-weight: bold;
+    margin: 0 0 5px 10px;
+}
+
+a{
+    color: var(--main-white);
 }
 
 
