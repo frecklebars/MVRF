@@ -21,34 +21,26 @@
 body{
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-
+    
     font-family: "standard";
     font-size: 22px;
 
     background-color: var(--main-black);
     color: var(--main-white);
-
-    /*this little bit makes text not change on mobile
-    
-	text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;*/
 }
 
-#navbar{
-    width: 100%;
+.topbar{
     background-color: var(--main-black);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-#navbar > div{
-    display: inline-block;
+.topbar div{
     padding: 10px;
 }
 
-#navbar > .time{
-    float: right;
-}
+
+
 
