@@ -1,0 +1,54 @@
+:root{
+    --main-white: #EAE7DE;
+	--main-black: #111111;
+	--purple: #694E7C;
+}
+
+.debug{
+    border: solid 1px red;
+}
+
+@font-face{
+    font-family: "standard";
+    src: url("font/TruenoLt.otf")
+    
+}
+
+*{
+    cursor: crosshair;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    font-family: "standard";
+    font-size: 22px;
+
+    background-color: var(--main-black);
+    color: var(--main-white);
+
+    /*this little bit makes text not change on mobile
+    
+	text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;*/
+}
+
+#navbar{
+    width: 100%;
+    background-color: var(--main-black);
+}
+
+#navbar > div{
+    display: inline-block;
+    padding: 10px;
+}
+
+#navbar > .time{
+    float: right;
+}
+
