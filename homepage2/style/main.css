@@ -8,17 +8,45 @@ body{
 
 .mainintro{
     position: absolute;
-    top: 45%;
+    top: 50%;
     transform: translateY(-50%);
 
-    margin: 0 50px;
+    margin: 0 75px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .mainintro h1{
-    font-size: 60px;
+    font-size: min(4vw, 60px);
 }
 
 .mainintro p{
-    font-size: 32px;
+    font-size: min(2vw, 30px);
 }
 
+.mainintro pre{
+    font-size: min(1.25vw, 19px);
+}
+
+
+@media only screen and (orientation: portrait){
+    .mainintro{
+        top: 43%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .mainintro h1{
+        font-size: 64px;
+    }
+    
+    .mainintro p{
+        font-size: 36px;
+    }
+
+    .mainintro pre{
+        font-size: 20px;
+    }
+}

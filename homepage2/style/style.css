@@ -1,6 +1,7 @@
 :root{
     --main-white: #EAE7DE;
 	--main-black: #111111;
+    --st-black: #111111eb;
 	--purple: #694E7C;
 }
 
@@ -24,6 +25,7 @@ body{
     
     font-family: "standard";
     font-size: 22px;
+    word-break: break-word;
 
     background-color: var(--main-black);
     color: var(--main-white);
@@ -38,7 +40,7 @@ body{
 }
 
 .navbar div{
-    padding: 10px;
+    padding: 14px;
     margin: 0 10px;
 }
 
@@ -46,22 +48,127 @@ body{
     background-color: var(--main-black);
     width: 100%;
 
-    position: absolute;
+    position: fixed;
     bottom: 0%;
 
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
 }
 
 .botbar a{
-    padding: 10px;
-    margin: 0 0 5px 10px;
+    padding: 14px;
+    margin: 0 0 0 10px;
+
+    text-align: center;
+}
+
+.botbar a:last-child{
+    margin-left: auto;
 }
 
 a{
     color: var(--main-white);
 }
 
+a:hover{
+    background-color: var(--purple);
+}
+
+.listmenu{
+    background-color: var(--st-black);
+    max-width: 85vw;
+    min-height: 70vh;
+
+    padding: 2%;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+
+    box-shadow: 10px 10px var(--main-black);
+}
+
+.listmenu-table{
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+    border-collapse: collapse;
+    
+    border-bottom: 2px solid var(--main-white);
+}
+
+.listmenu-table tr th{
+    padding: 10px 0px;
+
+    border-bottom: 2px solid var(--main-white);
+}
+
+.listmenu-table tr td{
+    padding: 7px 0px;
+    padding-left: 35px;
+
+    border-left: 2px solid var(--main-white);
+    border-right: 2px solid var(--main-white);
+}
+
+.listmenu-table tr:nth-child(n+2):hover{
+    background-color: var(--purple);
+}
+
+.listmenu-table tr td a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (orientation: portrait){
+    body{
+        font-size: 32px;
+    }
+
+    .navbar{
+        padding: 15px 0;
+    }
+
+    .navbar div{
+        font-size: 32px;
+    }
+
+    .botbar{
+        flex-direction: column;
+        text-align: center;
+
+        padding: 20px 0;
+    }
+
+    .botbar a{
+        font-size: 32px;
+        padding: 13px 0;
+    }
+
+    .botbar a:last-child{
+        margin-left: inherit;
+    }
+
+    .truebottom{
+        position: relative;
+    }
+
+    .listmenu{
+        min-height: 60vh;
+    }
+
+    .listmenu-table tr th{
+        padding: 15px 0px;
+    }
+
+    .listmenu-table tr td{
+        padding: 12px 0px;
+        padding-left: 35px;
+    }
+}
 
 
 
