@@ -2,65 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/files.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/files.css">
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/index.js"></script>
     <title>/files</title>
 </head>
 <body>
-    <div class="navbar">
-        <div>/files</div>
-        <div id="time">time</div>
-    </div>
-
-    <div class="listmenu">
-        <div>
-            <a href="../"><< return</a> <br>
-
+    <div class="blackpane-light">
+        <div class="navbar">
+            <div>/files</div>
+            <div id="time">time</div>
+        </div>
+    
+        <div class="listmenu">
             <table class="listmenu-table">
                 <colgroup>
-                    <col style="width: 50%;">
-                    <col span="2" style="width: 25%;">
+                    <col>
+                    <col span="2">
                 </colgroup>
-                <tr>
+                <tr class="toprow">
                     <th>name</th>
                     <th>type</th>
-                    <th>size</th>
+                    <th>date</th>
+                </tr>
+                <tr>
+                    <td><a href="/home">../</a></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td><a href="">heliosienne</a></td>
-                    <td>type</td>
-                    <td>size</td>
+                    <td>archive</td>
+                    <td>03/05/20</td>
                 </tr>
                 <tr>
                     <td><a href="">cookbook</a></td>
-                    <td>type</td>
-                    <td>size</td>
+                    <td>ebook</td>
+                    <td>--/--/--</td>
+                </tr>
+                <!--<tr>
+                    <td><a class="folder" folder="games">games /</a></td>
+                    <td>< dir ></td>
+                    <td></td>
+                </tr>-->
+                <tr>
+                    <td><a class="folder" folder="jamgames">jam-games /</a></td>
+                    <td>< dir ></td>
+                    <td></td>
+                </tr>
+                <tr class="infolder" infolder="jamgames">
+                    <td><a href="">── fruitfly</a></td>
+                    <td>game</td>
+                    <td>05/10/20</td>
+                </tr>
+                <tr class="infolder" infolder="jamgames">
+                    <td><a href="">── chamberlain</a></td>
+                    <td>game</td>
+                    <td>24/08/20</td>
                 </tr>
                 <tr>
-                    <td><a href="">jam-games</a></td>
-                    <td>type</td>
-                    <td>size</td>
-                </tr>
-                <tr>
-                    <td><a href="">paint</a></td>
-                    <td>type</td>
-                    <td>size</td>
+                    <td><a href="">art</a></td>
+                    <td>gallery</td>
+                    <td>--/--/--</td>
                 </tr>
                 <tr>
                     <td><a href="">photos</a></td>
-                    <td>type</td>
-                    <td>size</td>
+                    <td>gallery</td>
+                    <td>--/--/--</td>
                 </tr>
             </table>
         </div>
-    </div>
-
-    <div class="botbar truebottom">
-        <a href="/about">/about</a>
-        <a href="/files">/files</a>
-        <a href="/logs">/logs</a>
-        <a href="/contact">/contact</a>
-        <a href="/home">/home</a>
+    
+        <div class="botbar truebottom"></div>
     </div>
 </body>
 </html>

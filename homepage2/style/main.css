@@ -19,15 +19,24 @@ body{
 }
 
 .mainintro h1{
-    font-size: min(4vw, 60px);
+    font-size: min(3vw, 60px);
 }
 
 .mainintro p{
-    font-size: min(2vw, 30px);
+    font-size: min(1.75vw, 30px);
 }
 
 .mainintro pre{
     font-size: min(1.25vw, 19px);
+}
+
+.introtext{
+    width: 55%;
+}
+
+.ver{
+    font-size: 18px;
+    font-weight: 300;
 }
 
 
@@ -48,5 +57,9 @@ body{
 
     .mainintro pre{
         font-size: 20px;
+    }
+
+    .introtext{
+        width: inherit;
     }
 }
