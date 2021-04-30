@@ -1,0 +1,33 @@
+:root{
+	--main-white: #EAE7DE;
+	--main-black: #111111;
+	--purple: #694E7C;
+}
+
+* {
+    background-color: var(--main-black);
+    color: var(--main-white);
+    font-size: 36px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+*::selection{
+    background-color: var(--purple);
+    color: var(--main-black);
+}
+
+a{
+    color: var(--purple);
+}
+
+a:hover{
+    background-color: var(--purple);
+    color: var(--main-black);
+}
+
+center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+}

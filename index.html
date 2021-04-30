@@ -1,156 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="style/main.css">
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/clock.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>buttered toast</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>sup</title>
 </head>
-<body onload="setup(0)">
-	<section id="head">
-		<div class="verticalalign" style="margin-left: 10px">
-			butteredtoast / / . .
-		</div>
-		<div class="clock" id="clock"></div>
-		
-	</section>
-
-	<section id="main">
-		<div class="intro verticalalign">
-			<h1>alex / frecklebars</h1><br>
-			<p>developer, whatever medium</p>
-			<p>self teaching since 2000</p>
-            <p><strong style="font-size: 70px;"> under construction</strong></p> 
-            <p><strong style="font-size: 50px;"><a href="homepage2/index.html">new site demo</a></strong></p> 
-            <p><strong style="font-size: 20px;"> god damn im remaking this site again arent i</strong></p>
-			<br><br>
-		</div>
-	</section>
-	
-	<section id="intro">
-		<p class="title">intro .</p>
-		<hr><br>
-		<p class="textbody">
-			im alex, usually seen online as frecklebars <br>
-			i usually work on small projects related to either game dev, artificial intelligence or art/design stuff <br>
-			<br><br>
-			this is an archive of most things i made
-			<br><br>
-			<hr style="margin: 0 0 0 5%; width: 35%;">
-		</p>
-	</section>
-
-	<section id="projects">
-		<p class="title">file archive .</p>
-		<hr><br>
-		<div class="projectmenu">
-			<a onclick="displayMenu(this.id)" id="1"> [ >> . ] software</a><br>
-			<div class="projectlist" id="menu1">
-				<a onclick="displayMenu(this.id)" id="104"> [ 04 . ] ryven data science package // data science</a><br>
-				<div class="projectinfo" id="menu104">
-					<center>
-						<p class="title">Ryven - The Data Science Package </p>
-						<hr>
-						<br>
-						<p class="pdescription">
-							<a href="https://github.com/leon-thomm/Ryven">Ryven</a> is a simple flow-based visual scripting runtime environment for Python.
-							I wrote a package that glues <a href="https://scikit-learn.org/stable/">Scikit-Learn</a> to Ryven. The goal is to make data science and machine learning more aproachable and easier to use by people with little to no coding experience.
-							<br><br>
-							As a proof of concept I solved the <a href="https://www.kaggle.com/c/titanic">Titanic problem on Kaggle</a> using this fork. The link to the notebook explaining the working process is available below.
-						</p><br>
-						<hr><br>
-						<p class="plinks"><a href="https://github.com/frecklebars/Ryven">< GitHub ></a> / <a href="https://www.kaggle.com/frecklebars/ml-flow-based-visual-coding-using-ryven">< Kaggle Notebook ></a></p>
-						<br>
-					</center>
-				</div>
-				<a onclick="displayMenu(this.id)" id="103"> [ 03 . ] colornet // neural network demo</a><br>
-				<div class="projectinfo" id="menu103">
-					<center>
-						<p class="title">Color Neural Net .</p>
-						<hr>
-						<br>
-						<img src="projects/colornet/netgolden.png">
-						<br><br>
-						<p class="pdescription">
-							Demo neural network. <br>
-							This was my hello world project in the field of AI, specifically neural networks. Made to learn and learned to make. Simple to explain. <br>
-							Written in python3 originally, then again a couple months later in JavaScript for an interactive demo.
-						</p><br>
-						<hr><br>
-						<p class="plinks"><a href="projects/colornet/index.html">< Live Demo ></a> / <a href="https://github.com/frecklebars/colornet">< GitHub ></a></p>
-						<br>
-					</center>
-					
-				</div>
-				<a onclick="displayMenu(this.id)" id="102"> [ 02 . ] sweatshirt // lyrical markov</a><br>
-				<div class="projectinfo" id="menu102">
-					<center>
-						<p class="title" style="font-family: 'earl'">Sweatshirt .</p>
-						<hr>
-						<br>
-						<img src="projects/sweatshirt/ohcrap.png">
-						<br><br>
-						<p class="pdescription">
-							<span style="font-family: 'earl'">“To my son Thebe, whose growth and insights inspire me, a thousand kisses”</span><br><br>
-							Markov chain.<br>
-							Trained on lyrics from various artists such as Earl Sweatshirt, Kanye West, MF DOOM, and many others. <br>
-							Comes with a simple lyrics scraper used to get the training data from Genius.
-						</p><br>
-						<hr><br>
-						<p class="plinks"><a href="https://github.com/frecklebars/sweatshirt">< GitHub ></a></p><br>
-					</center>
-				</div>
-				<a onclick="displayMenu(this.id)" id="101"> [ 01 . ] brobotto // discord bot</a>
-				<div class="projectinfo" id="menu101">
-					<center>
-						<p class="title">Brobotto .</p>
-						<hr>
-						<br>
-						<img src="projects/brobotto/dogebanner.png">
-						<br><br>
-						<p class="pdescription">
-							Discord bot. <br>
-							<span style="color: #CA2E55">< !offline ></span> <br>
-							Runs on my raspi. Unavailable at this point in time due to hardware issues, and me not caring enough to replace it.
-						</p><br>
-						<hr><br>
-						<p class="plinks"><a href="https://discordapp.com/oauth2/authorize?client_id=597062511929589790&permissions=125952&scope=bot">< Invite ></a> / <a href="https://github.com/frecklebars/brobotto">< GitHub ></a></p><br>
-					</center>
-				</div>
-			</div>
-			<a onclick="displayMenu(this.id)" id="2"> [ >> . ] gamedev</a><br>
-			<div class="projectlist" id="menu2">
-				<a href="https://frecklebars.itch.io/fruitfly"> [ 02 . ] FRUITFLY // Ludum Dare 47 entry</a> ||| <a href="https://ldjam.com/events/ludum-dare/47/fruitfly">LD Link</a>
-				<br>
-				<a href="https://frecklebars.itch.io/chamberlain"> [ 01 . ] CHAMBERLAIN // Miz Jam 1 entry</a>
-				<br>
-				<a href="https://frecklebars.itch.io/"> <s> [ 0X1 . ] BASIN.1 // work in progress </s> </a>
-				<br>
-			</div>
-			<a onclick="displayMenu(this.id)" id="3"> [ >> . ] art</a><br>
-			<div class="projectlist" id="menu3">
-				<a onclick="displayMenu(this.id)" id="3.1">[ >> . ] gamedev art kits</a><br>
-				<div class="projectlist" id="menu3.1">
-					<a href="https://frecklebars.itch.io/gdsjam20-kit">[ 01 . ] UoB GDS Fall-o-Ween Jam 2020 Art Kit</a><br>
-				</div>
-				<a href="heliosienne/index.html">[ 03 . ] heliosienne // everyday</a><br>
-				<a href="art/index.html"> [ 02 . ] misc. // gallery</a><br>
-				<a href="inktober/index.html"> [ 01 . ] inktober // gallery</a>
-			</div>
-			<a onclick="displayMenu(this.id)" id="4"> [ >> . ] graphic design</a><br>
-			<div class="projectlist" id="menu4">
-				<a href="gd/albumcovers/index.html"> [ 01 . ] album covers // gallery</a>
-			<br>
-		</div><br>
-	</section>
-	</section>
-	<section id="contact">
-		<hr style="width: 85%">
-		<p class="title">sue me .</p>
-		<br><br>
-		<div class="contactinfo" id="contactcard"></div>
-	</section>
+<body>
+    <center>
+        <p>
+            sup <br><br>
+            the usual personal moved to <a href="https://freckleskies.neocities.org/">neocities</a> 
+            <br>
+            the git page is out of comission for a while
+            <br><br>
+            see u round 
+            <br><br>
+            <a href="https://freckleskies.neocities.org/">https://freckleskies.neocities.org/</a>
+        </p>
+    </center>
 </body>
 </html>
